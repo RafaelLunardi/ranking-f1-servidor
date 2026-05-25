@@ -20,7 +20,9 @@ const rulesGrid = document.querySelector("#rulesGrid");
 
 let activeSeries = "Serie A";
 let rankingMode = "drivers";
-let activeChampionship = localStorage.getItem("activeChampionship") || "f2";
+let activeChampionship = championshipButtons.length
+  ? localStorage.getItem("activeChampionship") || "f2"
+  : "f2";
 
 const emptyChampionshipData = {
   rankings: {

@@ -129,6 +129,62 @@ a {
   gap: 28px;
 }
 
+.with-discord {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 380px);
+  gap: 44px;
+  align-items: center;
+}
+
+.discord-card {
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(135deg, rgba(20, 99, 255, 0.28), rgba(17, 19, 26, 0.95)),
+    var(--panel);
+  padding: 28px;
+  box-shadow: var(--shadow);
+  transition:
+    border-color 160ms ease,
+    transform 160ms ease;
+}
+
+.discord-card:hover {
+  border-color: var(--blue);
+  transform: translateY(-2px);
+}
+
+.discord-card span {
+  color: var(--gold);
+  font-family: Rajdhani, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.discord-card h2 {
+  margin: 18px 0 10px;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.discord-card p {
+  margin-bottom: 22px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.discord-card strong {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  border-radius: var(--radius);
+  background: var(--blue);
+  color: #fff;
+  padding: 0 18px;
+}
+
 .championship-switch {
   display: inline-flex;
   flex: 0 0 auto;
@@ -636,8 +692,13 @@ footer a {
   .topbar,
   .split,
   .with-switch,
+  .with-discord,
   footer {
     display: block;
+  }
+
+  .discord-card {
+    margin-top: 28px;
   }
 
   .championship-switch {
