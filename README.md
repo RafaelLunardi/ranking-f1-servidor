@@ -1,4 +1,4 @@
-# Ranking F1 do Servidor
+﻿# Ruins de Roda
 
 Site estatico para acompanhar o campeonato de F1 do servidor: rankings da Serie A ate a Serie G, proximas corridas, noticias, dados das lives e regras.
 
