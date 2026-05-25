@@ -255,14 +255,34 @@ function renderRules() {
   }
 
   rulesGrid.innerHTML = data.rules
-    .map(
-      (rule) => `
+    .map((rule) => {
+      if (rule.items) {
+        return `
+          <article class="rule-section">
+            <h3>${rule.title}</h3>
+            <div class="rule-list">
+              ${rule.items
+                .map(
+                  (item) => `
+                    <div class="rule-row">
+                      <strong>${item.code}</strong>
+                      <p>${item.body}</p>
+                    </div>
+                  `
+                )
+                .join("")}
+            </div>
+          </article>
+        `;
+      }
+
+      return `
         <article class="rule-card">
           <h3>${rule.title}</h3>
           <p>${rule.body}</p>
         </article>
-      `
-    )
+      `;
+    })
     .join("");
 }
 

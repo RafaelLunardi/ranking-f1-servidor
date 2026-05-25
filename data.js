@@ -94,11 +94,45 @@ window.championshipData = {
     ]
   },
   rules: [
-    { title: "Pontualidade", body: "Entre no lobby com pelo menos 10 minutos de antecedencia para briefing e checagem de conexao." },
-    { title: "Respeito em pista", body: "Defesas e ataques devem deixar espaco quando houver sobreposicao relevante entre os carros." },
-    { title: "Penalizacoes", body: "Incidentes podem gerar advertencia, acrescimo de tempo, perda de pontos ou suspensao da etapa." },
-    { title: "Conexao", body: "Quedas e problemas tecnicos devem ser avisados a organizacao assim que possivel." },
-    { title: "Lives", body: "Participantes autorizam o uso de imagens das corridas nas transmissoes e clipes do campeonato." },
-    { title: "Fair play", body: "Condutas antidesportivas, provocacoes excessivas ou abuso de bugs podem levar a desclassificacao." }
+    {
+      title: "⬜ Administrativas ⬜",
+      items: [
+        { code: "M01", body: "Escolha errada do carro (melhor) -> +20s a +60s" },
+        { code: "M02", body: "Escolha errada do carro intencional -> Desclassificação + Suspensão 01 Corrida" },
+        { code: "M03", body: "Ofensa (Pública ou Privada) -> Desclassificação e/ou Suspensão 01 a 03 Corridas" }
+      ]
+    },
+    {
+      title: "🟩 Bandeira Verde 🟩",
+      items: [
+        { code: "BV01", body: "Sem Dano +0s | Dano Reparável +10s | Dano Irreparável +15s | Dano Indirigível +30s | NC +60s + Suspensão (01 Corrida)" },
+        { code: "BV02", body: "Atrapalhar volta rápida na qualificação +5s" },
+        { code: "BV03", body: "Ignorar Bandeira Azul +10s" },
+        { code: "BV04", body: "Pilotagem Errática +15s (Volta Insegura a Pista - (Re)Largada Insegura - Redução de Velocidade) (Não Aplicar em NC)" },
+        { code: "BV05", body: "Falta de Esportividade +30s (Múltiplas Mudanças de Linha de Corrida - Ultrapassagem \"Ultra Mergulho\" - Colisão Pitlane)" }
+      ]
+    },
+    {
+      title: "🟨 Bandeira Amarela 🟨",
+      items: [
+        { code: "BA01", body: "Sem Dano +0s | Dano Reparável +30s | Dano Irreparável +60s | Dano Indirigível +60s + Desclassificação + Suspensão (01 Corridas) | NC +60s + Desclassificação + Suspensão (05 Corridas)" },
+        { code: "Agravantes", body: "BA02: Pilotagem Errática +15s (Alinhamento \"Lado-a-Lado\" | Proximidade Desnecessária | Freada Brusca na Linha de Corrida)" },
+        { code: "BA03", body: "Perda Total do Controle +30s" },
+        { code: "BA04", body: "Perda de Posição | Ultrapassagem +30s" }
+      ]
+    },
+    {
+      title: "🟥 Suspensão | Suspención 🟥",
+      items: [
+        { code: "NC", body: "01 Corrida" }
+      ]
+    },
+    {
+      title: "🟦 Bandeira Azul 🟦",
+      items: [
+        { code: "BZ01", body: "Ceder posição de maneira insegura +05s" },
+        { code: "BZ02", body: "Falta de Esportividade 05 corridas de SUSPENSÃO (Empurrar adversário para fora da pista em Reta ou Semi-Reta - Disputar Posição em Bandeira Azul)" }
+      ]
+    }
   ]
 };

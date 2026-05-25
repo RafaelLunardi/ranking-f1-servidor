@@ -372,6 +372,10 @@ tr:last-child td {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.rules-grid {
+  grid-template-columns: 1fr;
+}
+
 .race-card,
 .news-card,
 .rule-card,
@@ -460,6 +464,48 @@ tr:last-child td {
 .news-card,
 .rule-card {
   padding: 20px;
+}
+
+.rule-section {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  overflow: hidden;
+}
+
+.rule-section h3 {
+  margin: 0;
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--line);
+  font-size: 1.65rem;
+}
+
+.rule-list {
+  display: grid;
+}
+
+.rule-row {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 18px;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.rule-row:last-child {
+  border-bottom: 0;
+}
+
+.rule-row strong {
+  color: var(--gold);
+  font-family: Rajdhani, sans-serif;
+  font-size: 1.05rem;
+}
+
+.rule-row p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
 }
 
 .live-kpis {
@@ -566,6 +612,11 @@ footer a {
   .live-list article {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .rule-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
   }
 
   footer a {
