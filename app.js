@@ -1,6 +1,7 @@
 const data = window.championshipData;
 
 const seriesTabs = document.querySelector("#seriesTabs");
+const championshipButtons = document.querySelectorAll("[data-championship]");
 const rankingModeButtons = document.querySelectorAll("[data-ranking-mode]");
 const rankingBody = document.querySelector("#rankingBody");
 const activeSeriesTitle = document.querySelector("#activeSeriesTitle");
@@ -16,8 +17,40 @@ const newsGrid = document.querySelector("#newsGrid");
 const liveKpis = document.querySelector("#liveKpis");
 const liveList = document.querySelector("#liveList");
 const rulesGrid = document.querySelector("#rulesGrid");
+
 let activeSeries = "Serie A";
 let rankingMode = "drivers";
+let activeChampionship = localStorage.getItem("activeChampionship") || "f2";
+
+const emptyChampionshipData = {
+  rankings: {
+    "Serie A": [],
+    "Serie B": [],
+    "Serie C": [],
+    "Serie D": [],
+    "Serie E": [],
+    "Serie F": [],
+    "Serie G": []
+  },
+  races: [],
+  news: [],
+  lives: {
+    totals: [
+      { label: "Lives feitas", value: "0" },
+      { label: "Media de viewers", value: "0" },
+      { label: "Horas transmitidas", value: "0h" }
+    ],
+    broadcasts: []
+  }
+};
+
+function getActiveData() {
+  return activeChampionship === "f2" ? data : emptyChampionshipData;
+}
+
+function getChampionshipLabel() {
+  return activeChampionship.toUpperCase();
+}
 
 function markActivePage() {
   const page = document.body.dataset.page;
@@ -34,15 +67,56 @@ function markActivePage() {
   });
 }
 
+function renderChampionshipSwitches() {
+  if (!championshipButtons.length) {
+    return;
+  }
+
+  championshipButtons.forEach((button) => {
+    button.classList.toggle("active", button.dataset.championship === activeChampionship);
+    button.addEventListener("click", () => {
+      activeChampionship = button.dataset.championship;
+      localStorage.setItem("activeChampionship", activeChampionship);
+
+      championshipButtons.forEach((championshipButton) => {
+        championshipButton.classList.toggle(
+          "active",
+          championshipButton.dataset.championship === activeChampionship
+        );
+      });
+
+      renderTabs();
+      renderRanking(activeSeries);
+      renderRaces();
+      renderNews();
+      renderLives();
+      renderSummary();
+    });
+  });
+}
+
+function renderEmptyRow(message) {
+  return `
+    <tr>
+      <td colspan="6" class="empty-table">${message}</td>
+    </tr>
+  `;
+}
+
 function renderRanking(seriesName) {
   if (!rankingBody || !activeSeriesTitle || !activeSeriesInfo) {
     return;
   }
 
+  const championshipData = getActiveData();
+  if (!championshipData.rankings[seriesName]) {
+    seriesName = Object.keys(championshipData.rankings)[0];
+  }
+
   activeSeries = seriesName;
-  const drivers = data.rankings[seriesName];
+  const drivers = championshipData.rankings[seriesName];
   const hasPilotStats = drivers.some((driver) => driver.dnf || driver.nc !== undefined);
-  activeSeriesTitle.textContent = seriesName;
+  activeSeriesTitle.textContent = `${getChampionshipLabel()} ${seriesName}`;
   activeSeriesInfo.textContent =
     rankingMode === "drivers"
       ? `${drivers.length} pilotos classificados nesta divisao`
@@ -66,27 +140,27 @@ function renderRanking(seriesName) {
           detail: driver.country ? `${driver.country} ${driver.flag ?? ""}` : driver.team,
           points: driver.points,
           metricOne:
-            driver.nc !== undefined
-              ? `${driver.movement ?? ""} NC`.trim()
-              : driver.wins,
+            driver.nc !== undefined ? `${driver.movement ?? ""} NC`.trim() : driver.wins,
           metricTwo: driver.dnf ?? driver.podiums
         }))
       : getConstructors(drivers);
 
-  rankingBody.innerHTML = rows
-    .map(
-      (entry, index) => `
-        <tr>
-          <td><span class="position">${entry.position ?? index + 1}</span></td>
-          <td>${entry.name}</td>
-          <td>${entry.detail}</td>
-          <td><strong>${entry.points}</strong></td>
-          <td>${entry.metricOne}</td>
-          <td>${entry.metricTwo}</td>
-        </tr>
-      `
-    )
-    .join("");
+  rankingBody.innerHTML = rows.length
+    ? rows
+        .map(
+          (entry, index) => `
+            <tr>
+              <td><span class="position">${entry.position ?? index + 1}</span></td>
+              <td>${entry.name}</td>
+              <td>${entry.detail}</td>
+              <td><strong>${entry.points}</strong></td>
+              <td>${entry.metricOne}</td>
+              <td>${entry.metricTwo}</td>
+            </tr>
+          `
+        )
+        .join("")
+    : renderEmptyRow(`Ainda nao ha dados da ${getChampionshipLabel()} nesta serie.`);
 
   document.querySelectorAll(".series-tabs button").forEach((button) => {
     button.classList.toggle("active", button.dataset.series === seriesName);
@@ -126,7 +200,9 @@ function getConstructors(drivers) {
         ? `${(
             constructor.dnfValues.reduce((total, value) => total + value, 0) /
             constructor.dnfValues.length
-          ).toFixed(1).replace(".", ",")}%`
+          )
+            .toFixed(1)
+            .replace(".", ",")}%`
         : "-"
     }))
     .sort((a, b) => b.points - a.points);
@@ -154,7 +230,8 @@ function renderTabs() {
     return;
   }
 
-  seriesTabs.innerHTML = Object.keys(data.rankings)
+  const championshipData = getActiveData();
+  seriesTabs.innerHTML = Object.keys(championshipData.rankings)
     .map(
       (seriesName) => `
         <button type="button" role="tab" data-series="${seriesName}">
@@ -164,40 +241,43 @@ function renderTabs() {
     )
     .join("");
 
-  seriesTabs.addEventListener("click", (event) => {
+  seriesTabs.onclick = (event) => {
     const button = event.target.closest("button");
     if (button) {
       renderRanking(button.dataset.series);
     }
-  });
+  };
 }
 
 function renderRaces() {
+  const championshipData = getActiveData();
   if (nextRaceDate) {
-    nextRaceDate.textContent = data.races[0]?.date ?? "--";
+    nextRaceDate.textContent = championshipData.races[0]?.date ?? "--";
   }
 
   if (!raceList) {
     return;
   }
 
-  raceList.innerHTML = data.races
-    .map(
-      (race) => `
-        <article class="race-card">
-          <div class="race-date">
-            <strong>${race.date}</strong>
-            <span>${race.time}</span>
-          </div>
-          <div>
-            <h3>${race.track}</h3>
-            <p>${race.series}</p>
-            <span>${race.format}</span>
-          </div>
-        </article>
-      `
-    )
-    .join("");
+  raceList.innerHTML = championshipData.races.length
+    ? championshipData.races
+        .map(
+          (race) => `
+            <article class="race-card">
+              <div class="race-date">
+                <strong>${race.date}</strong>
+                <span>${race.time}</span>
+              </div>
+              <div>
+                <h3>${race.track}</h3>
+                <p>${race.series}</p>
+                <span>${race.format}</span>
+              </div>
+            </article>
+          `
+        )
+        .join("")
+    : `<article class="empty-card">Ainda nao ha corridas da ${getChampionshipLabel()} cadastradas.</article>`;
 }
 
 function renderNews() {
@@ -205,22 +285,26 @@ function renderNews() {
     return;
   }
 
-  newsGrid.innerHTML = data.news
-    .map(
-      (item) => `
-        <article class="news-card">
-          <span>${item.tag}</span>
-          <h3>${item.title}</h3>
-          <p>${item.body}</p>
-        </article>
-      `
-    )
-    .join("");
+  const championshipData = getActiveData();
+  newsGrid.innerHTML = championshipData.news.length
+    ? championshipData.news
+        .map(
+          (item) => `
+            <article class="news-card">
+              <span>${item.tag}</span>
+              <h3>${item.title}</h3>
+              <p>${item.body}</p>
+            </article>
+          `
+        )
+        .join("")
+    : `<article class="empty-card">Ainda nao ha noticias da ${getChampionshipLabel()} cadastradas.</article>`;
 }
 
 function renderLives() {
+  const championshipData = getActiveData();
   if (liveKpis) {
-    liveKpis.innerHTML = data.lives.totals
+    liveKpis.innerHTML = championshipData.lives.totals
       .map(
         (item) => `
           <div>
@@ -233,19 +317,21 @@ function renderLives() {
   }
 
   if (liveList) {
-    liveList.innerHTML = data.lives.broadcasts
-      .map(
-        (broadcast) => `
-          <article>
-            <div>
-              <h3>${broadcast.title}</h3>
-              <p>${broadcast.channel} &middot; ${broadcast.views}</p>
-            </div>
-            <span>${broadcast.status}</span>
-          </article>
-        `
-      )
-      .join("");
+    liveList.innerHTML = championshipData.lives.broadcasts.length
+      ? championshipData.lives.broadcasts
+          .map(
+            (broadcast) => `
+              <article>
+                <div>
+                  <h3>${broadcast.title}</h3>
+                  <p>${broadcast.channel} &middot; ${broadcast.views}</p>
+                </div>
+                <span>${broadcast.status}</span>
+              </article>
+            `
+          )
+          .join("")
+      : `<article class="empty-card">Ainda nao ha lives da ${getChampionshipLabel()} cadastradas.</article>`;
   }
 }
 
@@ -291,13 +377,15 @@ function renderSummary() {
     return;
   }
 
-  totalDrivers.textContent = Object.values(data.rankings).reduce(
+  const championshipData = getActiveData();
+  totalDrivers.textContent = Object.values(championshipData.rankings).reduce(
     (count, drivers) => count + drivers.length,
     0
   );
 }
 
 markActivePage();
+renderChampionshipSwitches();
 renderRankingModes();
 renderTabs();
 renderRanking("Serie A");

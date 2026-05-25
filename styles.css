@@ -120,6 +120,41 @@ a {
   padding: 78px 0 86px;
 }
 
+.with-switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.championship-switch {
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  padding: 6px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(17, 19, 26, 0.9);
+  box-shadow: var(--shadow);
+}
+
+.championship-switch button {
+  min-width: 58px;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font: 700 1rem Rajdhani, sans-serif;
+  padding: 10px 18px;
+}
+
+.championship-switch button.active {
+  border-color: var(--red);
+  background: var(--red);
+  color: #fff;
+}
+
 .eyebrow {
   margin: 0 0 10px;
   color: var(--gold);
@@ -154,6 +189,14 @@ h1 {
   max-width: 650px;
   color: var(--muted);
   font-size: 1.12rem;
+  line-height: 1.7;
+}
+
+.hero-content.with-switch p:not(.eyebrow),
+.page-title.with-switch p:not(.eyebrow) {
+  max-width: 650px;
+  color: var(--muted);
+  font-size: 1.08rem;
   line-height: 1.7;
 }
 
@@ -335,6 +378,12 @@ th {
   text-transform: uppercase;
 }
 
+.empty-table {
+  padding: 34px 20px;
+  color: var(--muted);
+  text-align: center;
+}
+
 tr:last-child td {
   border-bottom: 0;
 }
@@ -380,10 +429,17 @@ tr:last-child td {
 .news-card,
 .rule-card,
 .live-list article,
-.overview-card {
+.overview-card,
+.empty-card {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--panel);
+}
+
+.empty-card {
+  padding: 22px;
+  color: var(--muted);
+  line-height: 1.6;
 }
 
 .overview-card {
@@ -570,8 +626,13 @@ footer a {
 @media (max-width: 840px) {
   .topbar,
   .split,
+  .with-switch,
   footer {
     display: block;
+  }
+
+  .championship-switch {
+    margin-top: 22px;
   }
 
   .nav-links {

@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=6" />
+    <link rel="stylesheet" href="styles.css?v=7" />
   </head>
   <body data-page="home">
     <header class="hero" id="inicio">
@@ -32,17 +32,23 @@
         </div>
       </nav>
 
-      <div class="hero-content">
-        <p class="eyebrow">Temporada comunitaria</p>
-        <h1>Ranking oficial das series de F1</h1>
-        <p>
-          Acompanhe a disputa do servidor da Serie A ate a Serie G, com tabela
-          atualizada, calendario das proximas corridas, noticias e dados das
-          transmissoes ao vivo.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="rankings.html">Ver rankings</a>
-          <a class="button secondary" href="corridas.html">Proximas corridas</a>
+      <div class="hero-content with-switch">
+        <div>
+          <p class="eyebrow">Temporada comunitaria</p>
+          <h1>Ranking oficial das series de F1 e F2</h1>
+          <p>
+            Acompanhe a disputa do servidor da Serie A ate a Serie G, com tabela
+            atualizada, calendario das proximas corridas, noticias e dados das
+            transmissoes ao vivo.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="rankings.html">Ver rankings</a>
+            <a class="button secondary" href="corridas.html">Proximas corridas</a>
+          </div>
+        </div>
+        <div class="championship-switch" aria-label="Categoria">
+          <button type="button" data-championship="f1">F1</button>
+          <button class="active" type="button" data-championship="f2">F2</button>
         </div>
       </div>
 
@@ -104,7 +110,7 @@
       <a href="#inicio">Voltar ao topo</a>
     </footer>
 
-    <script src="data.js?v=6"></script>
-    <script src="app.js?v=6"></script>
+    <script src="data.js?v=7"></script>
+    <script src="app.js?v=7"></script>
   </body>
 </html>
