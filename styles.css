@@ -248,7 +248,8 @@ h1 {
   margin-bottom: 18px;
 }
 
-.series-tabs button {
+.series-tabs button,
+.ranking-mode button {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--panel);
@@ -258,10 +259,21 @@ h1 {
   padding: 10px 16px;
 }
 
-.series-tabs button.active {
+.series-tabs button.active,
+.ranking-mode button.active {
   border-color: var(--red);
   background: var(--red);
   color: #fff;
+}
+
+.ranking-mode {
+  display: inline-flex;
+  gap: 8px;
+  margin-bottom: 18px;
+  padding: 6px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel-soft);
 }
 
 .ranking-shell,

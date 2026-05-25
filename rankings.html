@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=2" />
+    <link rel="stylesheet" href="styles.css?v=3" />
   </head>
   <body data-page="rankings">
     <header class="page-hero">
@@ -25,13 +25,17 @@
       <div class="page-title">
         <p class="eyebrow">Classificacao</p>
         <h1>Rankings</h1>
-        <p>Tabelas da Serie A ate Serie G, com pontos, vitorias e podios.</p>
+        <p>Tabelas da Serie A ate Serie G, com ranking de pilotos e construtores.</p>
       </div>
     </header>
 
     <main>
       <section class="section">
         <div class="series-tabs" id="seriesTabs" role="tablist" aria-label="Series"></div>
+        <div class="ranking-mode" aria-label="Tipo de ranking">
+          <button class="active" type="button" data-ranking-mode="drivers">Pilotos</button>
+          <button type="button" data-ranking-mode="constructors">Construtores</button>
+        </div>
         <div class="ranking-shell">
           <div class="ranking-header">
             <h3 id="activeSeriesTitle">Serie A</h3>
@@ -42,8 +46,8 @@
               <thead>
                 <tr>
                   <th>Pos</th>
-                  <th>Piloto</th>
-                  <th>Equipe</th>
+                  <th id="rankingNameHeader">Piloto</th>
+                  <th id="rankingDetailHeader">Equipe</th>
                   <th>Pontos</th>
                   <th>Vitorias</th>
                   <th>Podios</th>
@@ -61,7 +65,7 @@
       <a href="index.html">Voltar para inicio</a>
     </footer>
 
-    <script src="data.js?v=2"></script>
-    <script src="app.js?v=2"></script>
+    <script src="data.js?v=3"></script>
+    <script src="app.js?v=3"></script>
   </body>
 </html>

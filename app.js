@@ -1,9 +1,12 @@
 const data = window.championshipData;
 
 const seriesTabs = document.querySelector("#seriesTabs");
+const rankingModeButtons = document.querySelectorAll("[data-ranking-mode]");
 const rankingBody = document.querySelector("#rankingBody");
 const activeSeriesTitle = document.querySelector("#activeSeriesTitle");
 const activeSeriesInfo = document.querySelector("#activeSeriesInfo");
+const rankingNameHeader = document.querySelector("#rankingNameHeader");
+const rankingDetailHeader = document.querySelector("#rankingDetailHeader");
 const totalDrivers = document.querySelector("#totalDrivers");
 const nextRaceDate = document.querySelector("#nextRaceDate");
 const raceList = document.querySelector("#raceList");
@@ -11,6 +14,8 @@ const newsGrid = document.querySelector("#newsGrid");
 const liveKpis = document.querySelector("#liveKpis");
 const liveList = document.querySelector("#liveList");
 const rulesGrid = document.querySelector("#rulesGrid");
+let activeSeries = "Serie A";
+let rankingMode = "drivers";
 
 function markActivePage() {
   const page = document.body.dataset.page;
@@ -32,20 +37,40 @@ function renderRanking(seriesName) {
     return;
   }
 
+  activeSeries = seriesName;
   const drivers = data.rankings[seriesName];
   activeSeriesTitle.textContent = seriesName;
-  activeSeriesInfo.textContent = `${drivers.length} pilotos classificados nesta divisao`;
+  activeSeriesInfo.textContent =
+    rankingMode === "drivers"
+      ? `${drivers.length} pilotos classificados nesta divisao`
+      : `${getConstructors(drivers).length} construtores classificados nesta divisao`;
 
-  rankingBody.innerHTML = drivers
+  if (rankingNameHeader && rankingDetailHeader) {
+    rankingNameHeader.textContent = rankingMode === "drivers" ? "Piloto" : "Construtor";
+    rankingDetailHeader.textContent = rankingMode === "drivers" ? "Equipe" : "Pilotos";
+  }
+
+  const rows =
+    rankingMode === "drivers"
+      ? drivers.map((driver) => ({
+          name: driver.driver,
+          detail: driver.team,
+          points: driver.points,
+          wins: driver.wins,
+          podiums: driver.podiums
+        }))
+      : getConstructors(drivers);
+
+  rankingBody.innerHTML = rows
     .map(
-      (driver, index) => `
+      (entry, index) => `
         <tr>
           <td><span class="position">${index + 1}</span></td>
-          <td>${driver.driver}</td>
-          <td>${driver.team}</td>
-          <td><strong>${driver.points}</strong></td>
-          <td>${driver.wins}</td>
-          <td>${driver.podiums}</td>
+          <td>${entry.name}</td>
+          <td>${entry.detail}</td>
+          <td><strong>${entry.points}</strong></td>
+          <td>${entry.wins}</td>
+          <td>${entry.podiums}</td>
         </tr>
       `
     )
@@ -54,6 +79,50 @@ function renderRanking(seriesName) {
   document.querySelectorAll(".series-tabs button").forEach((button) => {
     button.classList.toggle("active", button.dataset.series === seriesName);
     button.setAttribute("aria-selected", button.dataset.series === seriesName);
+  });
+}
+
+function getConstructors(drivers) {
+  const constructors = new Map();
+
+  drivers.forEach((driver) => {
+    const current = constructors.get(driver.team) ?? {
+      name: driver.team,
+      detail: [],
+      points: 0,
+      wins: 0,
+      podiums: 0
+    };
+
+    current.detail.push(driver.driver);
+    current.points += driver.points;
+    current.wins += driver.wins;
+    current.podiums += driver.podiums;
+    constructors.set(driver.team, current);
+  });
+
+  return [...constructors.values()]
+    .map((constructor) => ({
+      ...constructor,
+      detail: constructor.detail.join(", ")
+    }))
+    .sort((a, b) => b.points - a.points || b.wins - a.wins || b.podiums - a.podiums);
+}
+
+function renderRankingModes() {
+  if (!rankingModeButtons.length) {
+    return;
+  }
+
+  rankingModeButtons.forEach((button) => {
+    button.classList.toggle("active", button.dataset.rankingMode === rankingMode);
+    button.addEventListener("click", () => {
+      rankingMode = button.dataset.rankingMode;
+      rankingModeButtons.forEach((modeButton) => {
+        modeButton.classList.toggle("active", modeButton.dataset.rankingMode === rankingMode);
+      });
+      renderRanking(activeSeries);
+    });
   });
 }
 
@@ -186,6 +255,7 @@ function renderSummary() {
 }
 
 markActivePage();
+renderRankingModes();
 renderTabs();
 renderRanking("Serie A");
 renderRaces();
