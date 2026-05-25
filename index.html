@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ranking F1 do Servidor</title>
+    <meta
+      name="description"
+      content="Ranking de F1 do servidor com series A ate G, proximas corridas, noticias, lives e regras."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="inicio">
+      <nav class="topbar" aria-label="Navegacao principal">
+        <a class="brand" href="#inicio" aria-label="Ranking F1 inicio">
+          <span class="brand-mark">F1</span>
+          <span>Ranking do Servidor</span>
+        </a>
+        <div class="nav-links">
+          <a href="#rankings">Rankings</a>
+          <a href="#calendario">Corridas</a>
+          <a href="#noticias">Noticias</a>
+          <a href="#lives">Lives</a>
+          <a href="#regras">Regras</a>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <p class="eyebrow">Temporada comunitaria</p>
+        <h1>Ranking oficial das series de F1</h1>
+        <p>
+          Acompanhe a disputa do servidor da Serie A ate a Serie G, com tabela
+          atualizada, calendario das proximas corridas, noticias e dados das
+          transmissoes ao vivo.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#rankings">Ver rankings</a>
+          <a class="button secondary" href="#calendario">Proximas corridas</a>
+        </div>
+      </div>
+
+      <section class="stats-strip" aria-label="Resumo do campeonato">
+        <div>
+          <strong id="totalDrivers">0</strong>
+          <span>Pilotos inscritos</span>
+        </div>
+        <div>
+          <strong>7</strong>
+          <span>Series ativas</span>
+        </div>
+        <div>
+          <strong id="nextRaceDate">--</strong>
+          <span>Proxima corrida</span>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section" id="rankings">
+        <div class="section-heading">
+          <p class="eyebrow">Classificacao</p>
+          <h2>Tabelas da Serie A ate Serie G</h2>
+          <p>Use as abas para navegar entre as divisoes do campeonato.</p>
+        </div>
+        <div class="series-tabs" id="seriesTabs" role="tablist" aria-label="Series"></div>
+        <div class="ranking-shell">
+          <div class="ranking-header">
+            <h3 id="activeSeriesTitle">Serie A</h3>
+            <p id="activeSeriesInfo">Carregando classificacao...</p>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Pos</th>
+                  <th>Piloto</th>
+                  <th>Equipe</th>
+                  <th>Pontos</th>
+                  <th>Vitorias</th>
+                  <th>Podios</th>
+                </tr>
+              </thead>
+              <tbody id="rankingBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section split" id="calendario">
+        <div class="section-heading">
+          <p class="eyebrow">Agenda</p>
+          <h2>Proximas corridas</h2>
+          <p>Calendario dos proximos GPs do servidor.</p>
+        </div>
+        <div class="race-list" id="raceList"></div>
+      </section>
+
+      <section class="section" id="noticias">
+        <div class="section-heading">
+          <p class="eyebrow">Paddock</p>
+          <h2>Noticias do campeonato</h2>
+          <p>Comunicados, destaques das etapas e avisos para os pilotos.</p>
+        </div>
+        <div class="news-grid" id="newsGrid"></div>
+      </section>
+
+      <section class="section split" id="lives">
+        <div class="section-heading">
+          <p class="eyebrow">Transmissoes</p>
+          <h2>Dados das lives</h2>
+          <p>Resumo das transmissoes feitas pela comunidade.</p>
+        </div>
+        <div class="live-panel">
+          <div class="live-kpis" id="liveKpis"></div>
+          <div class="live-list" id="liveList"></div>
+        </div>
+      </section>
+
+      <section class="section" id="regras">
+        <div class="section-heading">
+          <p class="eyebrow">Regulamento</p>
+          <h2>Regras principais</h2>
+          <p>Base para manter as corridas competitivas e organizadas.</p>
+        </div>
+        <div class="rules-grid" id="rulesGrid"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Ranking F1 do Servidor. Atualize os dados em <code>data.js</code>.</p>
+      <a href="#inicio">Voltar ao topo</a>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
