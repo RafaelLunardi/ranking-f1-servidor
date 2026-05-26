@@ -23,6 +23,7 @@ let rankingMode = "drivers";
 let activeChampionship = championshipButtons.length
   ? localStorage.getItem("activeChampionship") || "f2"
   : "f2";
+const loadedSheets = new Set();
 
 const emptyChampionshipData = {
   rankings: {
@@ -52,6 +53,155 @@ function getActiveData() {
 
 function getChampionshipLabel() {
   return activeChampionship.toUpperCase();
+}
+
+function parseCsv(csvText) {
+  const rows = [];
+  let field = "";
+  let row = [];
+  let inQuotes = false;
+
+  for (let index = 0; index < csvText.length; index += 1) {
+    const char = csvText[index];
+    const next = csvText[index + 1];
+
+    if (char === '"' && inQuotes && next === '"') {
+      field += '"';
+      index += 1;
+    } else if (char === '"') {
+      inQuotes = !inQuotes;
+    } else if (char === "," && !inQuotes) {
+      row.push(field);
+      field = "";
+    } else if ((char === "\n" || char === "\r") && !inQuotes) {
+      if (char === "\r" && next === "\n") {
+        index += 1;
+      }
+      row.push(field);
+      rows.push(row);
+      field = "";
+      row = [];
+    } else {
+      field += char;
+    }
+  }
+
+  if (field || row.length) {
+    row.push(field);
+    rows.push(row);
+  }
+
+  return rows;
+}
+
+function flagCodeToCountry(flagCode) {
+  const code = flagCode.replaceAll(":", "").replace("flag_", "").toUpperCase();
+  const countries = {
+    AR: "ARG",
+    AU: "AUS",
+    BR: "BRA",
+    CA: "CAN",
+    CH: "SUI",
+    CL: "CHI",
+    CO: "COL",
+    CZ: "CZE",
+    ES: "ESP",
+    FI: "FIN",
+    FR: "FRA",
+    GB: "GBR",
+    GH: "GHA",
+    MX: "MEX",
+    NL: "NED",
+    TH: "THA",
+    TR: "TUR",
+    US: "USA",
+    UY: "URU"
+  };
+
+  return countries[code] || code || "???";
+}
+
+function flagCodeToEmoji(flagCode) {
+  const code = flagCode.replaceAll(":", "").replace("flag_", "").toUpperCase();
+  if (!/^[A-Z]{2}$/.test(code)) {
+    return "";
+  }
+
+  return [...code].map((letter) => String.fromCodePoint(127397 + letter.charCodeAt(0))).join("");
+}
+
+function parseNumber(value) {
+  return Number(String(value).replace("%", "").replace(".", "").replace(",", ".")) || 0;
+}
+
+function cleanMovement(value) {
+  return String(value).replaceAll("*", "").trim();
+}
+
+function formatPoints(value) {
+  const normalized = String(value).trim();
+  return normalized.includes(",") ? normalized : normalized.replace(".", ",");
+}
+
+function mapSheetRankingRows(csvRows) {
+  return csvRows
+    .slice(1)
+    .filter((row) => row[1] && row[1] !== "#N/A")
+    .map((row) => {
+      const flagCode = row[2] || "";
+
+      return {
+        position: String(row[0]).padStart(2, "0"),
+        driver: row[1],
+        country: flagCodeToCountry(flagCode),
+        flag: flagCodeToEmoji(flagCode),
+        team: "Sem construtor",
+        points: parseNumber(row[5]),
+        pointsLabel: formatPoints(row[5]),
+        movement: cleanMovement(row[6] || ""),
+        nc: parseNumber(row[8]),
+        dnf: row[7] || "-"
+      };
+    });
+}
+
+async function loadSheetRankings() {
+  const sources = data.sheetSources?.[activeChampionship]?.rankings;
+  if (!sources) {
+    return;
+  }
+
+  await Promise.all(
+    Object.entries(sources).map(async ([seriesName, url]) => {
+      const key = `${activeChampionship}:${seriesName}`;
+      if (loadedSheets.has(key)) {
+        return;
+      }
+
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`Falha ao carregar ${seriesName}`);
+      }
+
+      const csvText = await response.text();
+      const rows = mapSheetRankingRows(parseCsv(csvText));
+      if (rows.length) {
+        data.rankings[seriesName] = rows;
+        loadedSheets.add(key);
+      }
+    })
+  );
+}
+
+async function refreshFromSheets() {
+  try {
+    await loadSheetRankings();
+    renderTabs();
+    renderRanking(activeSeries);
+    renderSummary();
+  } catch (error) {
+    console.warn("Nao foi possivel carregar dados do Google Sheets.", error);
+  }
 }
 
 function markActivePage() {
@@ -93,6 +243,7 @@ function renderChampionshipSwitches() {
       renderNews();
       renderLives();
       renderSummary();
+      refreshFromSheets();
     });
   });
 }
@@ -141,6 +292,7 @@ function renderRanking(seriesName) {
           name: driver.driver,
           detail: driver.country ? `${driver.country} ${driver.flag ?? ""}` : driver.team,
           points: driver.points,
+          pointsLabel: driver.pointsLabel,
           metricOne:
             driver.nc !== undefined ? `${driver.movement ?? ""} NC`.trim() : driver.wins,
           metricTwo: driver.dnf ?? driver.podiums
@@ -155,7 +307,7 @@ function renderRanking(seriesName) {
               <td><span class="position">${entry.position ?? index + 1}</span></td>
               <td>${entry.name}</td>
               <td>${entry.detail}</td>
-              <td><strong>${entry.points}</strong></td>
+              <td><strong>${entry.pointsLabel ?? entry.points}</strong></td>
               <td>${entry.metricOne}</td>
               <td>${entry.metricTwo}</td>
             </tr>
@@ -197,6 +349,7 @@ function getConstructors(drivers) {
       name: constructor.name,
       detail: constructor.detail.join(", "),
       points: constructor.points,
+      pointsLabel: constructor.points.toFixed(2).replace(".", ","),
       metricOne: `${constructor.nc} NC`,
       metricTwo: constructor.dnfValues.length
         ? `${(
@@ -396,3 +549,4 @@ renderNews();
 renderLives();
 renderRules();
 renderSummary();
+refreshFromSheets();

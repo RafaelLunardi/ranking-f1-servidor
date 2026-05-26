@@ -1,4 +1,11 @@
 window.championshipData = {
+  sheetSources: {
+    f2: {
+      rankings: {
+        "Serie A": "https://docs.google.com/spreadsheets/d/1KWkrcpZXpvO2Cj8rc1_v9B9xr2QMRtbN_bSitTcaAl8/gviz/tq?tqx=out:csv&gid=0"
+      }
+    }
+  },
   rankings: {
     "Serie A": [
       { position: "01", driver: "@PRTCarvalho", country: "BRA", flag: "🇧🇷", team: "Sem construtor", points: 77, movement: "◀️ = 0", nc: 0, dnf: "8,3%" },
