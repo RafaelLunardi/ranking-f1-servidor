@@ -150,6 +150,45 @@ function formatPoints(value) {
   return normalized.includes(",") ? normalized : normalized.replace(".", ",");
 }
 
+function getMovementParts(value) {
+  const movement = String(value || "").trim();
+  const symbol = movement.match(/[🔼⏫▲⬆️🔽▼⬇️◀️➡️=]/u)?.[0] || "=";
+  const label = movement.replace(/[🔼⏫▲⬆️🔽▼⬇️◀️➡️]/gu, "").trim() || "= 0";
+  let direction = "same";
+
+  if (/🔼|⏫|▲|⬆️|\+\s*\d/.test(movement)) {
+    direction = "up";
+  } else if (/🔽|▼|⬇️|-\s*\d/.test(movement)) {
+    direction = "down";
+  }
+
+  return { direction, label, symbol };
+}
+
+function renderCountry(country, flag) {
+  if (!country && !flag) {
+    return "";
+  }
+
+  return `
+    <span class="country-cell">
+      <span class="country-flag">${flag ?? ""}</span>
+      <span>${country ?? ""}</span>
+    </span>
+  `;
+}
+
+function renderMovement(movement) {
+  const { direction, label, symbol } = getMovementParts(movement);
+
+  return `
+    <span class="movement-cell">
+      <span class="movement-badge ${direction}">${symbol}</span>
+      <span>${label} NC</span>
+    </span>
+  `;
+}
+
 function mapSheetRankingRows(csvRows) {
   return csvRows
     .slice(1)
@@ -306,11 +345,11 @@ function renderRanking(seriesName) {
       ? drivers.map((driver) => ({
           position: driver.position,
           name: driver.driver,
-          detail: driver.country ? `${driver.country} ${driver.flag ?? ""}` : driver.team,
+          detail: driver.country ? renderCountry(driver.country, driver.flag) : driver.team,
           points: driver.points,
           pointsLabel: driver.pointsLabel,
           metricOne:
-            driver.nc !== undefined ? `${driver.movement ?? ""} NC`.trim() : driver.wins,
+            driver.nc !== undefined ? renderMovement(driver.movement) : driver.wins,
           metricTwo: driver.dnf ?? driver.podiums
         }))
       : getConstructors(drivers);
