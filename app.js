@@ -147,11 +147,11 @@ function mapSheetRankingRows(csvRows) {
   return csvRows
     .slice(1)
     .filter((row) => row[1] && row[1] !== "#N/A")
-    .map((row) => {
+    .map((row, index) => {
       const flagCode = row[2] || "";
 
       return {
-        position: String(row[0]).padStart(2, "0"),
+        position: String((index % 20) + 1).padStart(2, "0"),
         driver: row[1],
         country: flagCodeToCountry(flagCode),
         flag: flagCodeToEmoji(flagCode),
@@ -163,6 +163,15 @@ function mapSheetRankingRows(csvRows) {
         dnf: row[7] || "-"
       };
     });
+}
+
+function splitRowsIntoSeries(rows) {
+  const seriesNames = ["Serie A", "Serie B", "Serie C", "Serie D", "Serie E", "Serie F", "Serie G"];
+
+  return seriesNames.reduce((rankings, seriesName, index) => {
+    rankings[seriesName] = rows.slice(index * 20, index * 20 + 20);
+    return rankings;
+  }, {});
 }
 
 async function loadSheetRankings() {
@@ -186,7 +195,7 @@ async function loadSheetRankings() {
       const csvText = await response.text();
       const rows = mapSheetRankingRows(parseCsv(csvText));
       if (rows.length) {
-        data.rankings[seriesName] = rows;
+        Object.assign(data.rankings, splitRowsIntoSeries(rows));
         loadedSheets.add(key);
       }
     })
