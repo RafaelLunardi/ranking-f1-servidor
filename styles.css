@@ -480,6 +480,14 @@ tr:last-child td {
   line-height: 1;
 }
 
+.country-flag-img {
+  width: 22px;
+  height: auto;
+  border-radius: 2px;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
 .movement-badge {
   display: inline-grid;
   width: 22px;

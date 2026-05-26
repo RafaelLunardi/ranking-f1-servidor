@@ -170,14 +170,31 @@ function getMovementParts(value) {
   return { direction, label, symbol };
 }
 
+function emojiToFlagCode(emoji) {
+  if (!emoji) return "";
+  try {
+    return [...emoji]
+      .map((c) => String.fromCharCode(c.codePointAt(0) - 0x1f1e6 + 65))
+      .join("")
+      .toLowerCase();
+  } catch {
+    return "";
+  }
+}
+
 function renderCountry(country, flag) {
   if (!country && !flag) {
     return "";
   }
 
+  const code = emojiToFlagCode(flag);
+  const flagHtml = code
+    ? `<img class="country-flag-img" src="https://flagcdn.com/w20/${code}.png" alt="${country ?? ""}">`
+    : `<span class="country-flag">${flag ?? ""}</span>`;
+
   return `
     <span class="country-cell">
-      <span class="country-flag">${flag ?? ""}</span>
+      ${flagHtml}
       <span>${country ?? ""}</span>
     </span>
   `;
