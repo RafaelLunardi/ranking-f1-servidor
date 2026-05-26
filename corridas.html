@@ -8,10 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=15" />
+    <link rel="stylesheet" href="styles.css?v=16" />
   </head>
   <body data-page="corridas">
-    <header class="page-hero">
+    <header class="page-hero race-hero">
       <nav class="topbar" aria-label="Navegacao principal">
         <a class="brand" href="index.html" aria-label="Ruins de Roda inicio"><span class="brand-mark">F1</span><span>Ruins de Roda</span></a>
         <div class="nav-links">
@@ -36,8 +36,15 @@
     </header>
 
     <main>
-      <section class="section">
-        <div class="race-list wide-list" id="raceList"></div>
+      <section class="section race-section">
+        <div class="race-section-title">
+          <span class="race-title-icon">▣</span>
+          <h2>Proximos GPs</h2>
+        </div>
+        <div class="race-layout">
+          <div class="race-list" id="raceList"></div>
+          <aside class="next-race-panel" id="nextRacePanel" aria-label="Proxima corrida"></aside>
+        </div>
       </section>
     </main>
 
@@ -46,8 +53,8 @@
       <a href="index.html">Voltar para inicio</a>
     </footer>
 
-    <script src="data.js?v=14"></script>
-    <script src="sheet-data.js?v=14"></script>
-    <script src="app.js?v=15"></script>
+    <script src="data.js?v=16"></script>
+    <script src="sheet-data.js?v=16"></script>
+    <script src="app.js?v=16"></script>
   </body>
 </html>

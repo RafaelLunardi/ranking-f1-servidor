@@ -67,9 +67,10 @@ window.championshipData = {
     ]
   },
   races: [
-    { date: "30/05", time: "21:00", series: "Series A e B", track: "GP do Brasil", format: "Sprint + corrida" },
-    { date: "01/06", time: "20:30", series: "Series C e D", track: "GP da Italia", format: "Classificacao curta" },
-    { date: "04/06", time: "21:30", series: "Series E, F e G", track: "GP do Japao", format: "Corrida 50%" }
+    { date: "30/05", time: "21:00", series: "Series A e B", shortSeries: "A e B", track: "GP do Brasil", country: "Brasil", flag: "🇧🇷", format: "Sprint + Corrida", type: "sprint", visual: "brazil", circuit: "M32 74 C74 24 126 24 144 64 C162 104 116 128 88 94 C64 64 42 118 24 104" },
+    { date: "01/06", time: "20:30", series: "Series C e D", shortSeries: "C e D", track: "GP da Italia", country: "Italia", flag: "🇮🇹", format: "Classificacao curta", type: "qualy", visual: "italy", circuit: "M42 30 C82 18 130 40 118 74 C106 112 50 122 32 92 C16 64 58 58 42 30" },
+    { date: "04/06", time: "21:00", series: "Series E, F e G", shortSeries: "E, F e G", track: "GP do Japao", country: "Japao", flag: "🇯🇵", format: "Corrida normal", type: "normal", visual: "japan", circuit: "M30 96 C66 40 98 126 132 62 C158 18 178 92 128 108 C92 124 58 72 30 96" },
+    { date: "08/06", time: "21:00", series: "Series A e B", shortSeries: "A e B", track: "GP da Espanha", country: "Espanha", flag: "🇪🇸", format: "Corrida normal", type: "normal", visual: "spain", circuit: "M28 82 C54 32 104 44 126 28 C166 4 178 70 136 84 C92 98 86 132 48 116 C24 106 8 96 28 82" }
   ],
   news: [
     {

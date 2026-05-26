@@ -520,6 +520,56 @@ tr:last-child td {
   align-items: start;
 }
 
+body[data-page="corridas"] .page-hero {
+  min-height: 390px;
+  background:
+    linear-gradient(90deg, rgba(7, 8, 11, 0.98) 0%, rgba(7, 8, 11, 0.78) 42%, rgba(7, 8, 11, 0.34) 100%),
+    radial-gradient(circle at 80% 26%, rgba(225, 6, 0, 0.42), transparent 26%),
+    linear-gradient(150deg, transparent 36%, rgba(225, 6, 0, 0.22) 44%, transparent 52%),
+    repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 22px),
+    #07080b;
+}
+
+body[data-page="corridas"] .page-title {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+body[data-page="corridas"] .eyebrow {
+  color: var(--red);
+  border-left: 4px solid var(--red);
+  padding-left: 16px;
+}
+
+.race-section {
+  padding-top: 34px;
+}
+
+.race-section-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.race-section-title h2 {
+  margin: 0;
+  font-size: 1.55rem;
+  text-transform: uppercase;
+}
+
+.race-title-icon {
+  color: var(--red);
+  font-size: 1.3rem;
+}
+
+.race-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 26px;
+  align-items: start;
+}
+
 .race-list,
 .news-grid,
 .rules-grid,
@@ -586,26 +636,107 @@ tr:last-child td {
 
 .race-card {
   display: grid;
-  grid-template-columns: 110px 1fr;
-  gap: 18px;
-  padding: 18px;
+  position: relative;
+  min-height: 132px;
+  grid-template-columns: 180px 1fr 190px;
+  gap: 24px;
+  align-items: center;
+  overflow: hidden;
+  border-color: rgba(255, 255, 255, 0.18);
+  background:
+    linear-gradient(90deg, rgba(17, 19, 26, 0.98), rgba(17, 19, 26, 0.72) 52%, rgba(17, 19, 26, 0.96)),
+    var(--panel);
+  padding: 0;
 }
 
-.wide-list {
-  max-width: 860px;
+.race-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 190px 0 180px;
+  opacity: 0.72;
+  background:
+    linear-gradient(90deg, rgba(7, 8, 11, 0.96), rgba(7, 8, 11, 0.3), rgba(7, 8, 11, 0.92)),
+    radial-gradient(circle at 52% 40%, rgba(255, 255, 255, 0.22), transparent 24%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.08), transparent 48%);
+  pointer-events: none;
+}
+
+.race-visual-brazil::before {
+  background:
+    linear-gradient(90deg, rgba(7, 8, 11, 0.96), rgba(7, 8, 11, 0.28), rgba(7, 8, 11, 0.92)),
+    radial-gradient(circle at 50% 35%, rgba(251, 220, 24, 0.42), transparent 24%),
+    linear-gradient(145deg, rgba(16, 123, 69, 0.25), transparent 56%);
+}
+
+.race-visual-italy::before {
+  background:
+    linear-gradient(90deg, rgba(7, 8, 11, 0.96), rgba(7, 8, 11, 0.24), rgba(7, 8, 11, 0.92)),
+    linear-gradient(135deg, rgba(0, 146, 70, 0.24), transparent 36%),
+    radial-gradient(circle at 58% 48%, rgba(255, 255, 255, 0.28), transparent 28%);
+}
+
+.race-visual-japan::before {
+  background:
+    linear-gradient(90deg, rgba(7, 8, 11, 0.96), rgba(7, 8, 11, 0.24), rgba(7, 8, 11, 0.92)),
+    radial-gradient(circle at 58% 42%, rgba(188, 0, 45, 0.35), transparent 25%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.12), transparent 48%);
+}
+
+.race-visual-spain::before {
+  background:
+    linear-gradient(90deg, rgba(7, 8, 11, 0.96), rgba(7, 8, 11, 0.24), rgba(7, 8, 11, 0.92)),
+    radial-gradient(circle at 58% 42%, rgba(255, 204, 0, 0.32), transparent 26%),
+    linear-gradient(135deg, rgba(198, 11, 30, 0.28), transparent 52%);
 }
 
 .race-date {
-  border-radius: var(--radius);
-  background: var(--red);
-  padding: 16px;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  gap: 6px;
+  border-right: 1px solid rgba(225, 6, 0, 0.55);
+  border-radius: 0;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.12), transparent 28%),
+    linear-gradient(135deg, rgba(225, 6, 0, 0.62), rgba(64, 0, 0, 0.86));
+  padding: 20px;
   text-align: center;
 }
 
 .race-date strong {
   display: block;
   font-family: Rajdhani, sans-serif;
-  font-size: 1.8rem;
+  font-size: 2.6rem;
+  line-height: 0.9;
+}
+
+.race-date span {
+  color: var(--red);
+  font: 700 1.35rem Rajdhani, sans-serif;
+}
+
+.race-date-icon {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.race-card-main {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.race-flag {
+  display: grid;
+  width: 44px;
+  height: 32px;
+  place-items: center;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.92);
+  font-size: 1.45rem;
+  box-shadow: 0 0 28px rgba(255, 255, 255, 0.1);
 }
 
 .race-card h3,
@@ -624,11 +755,116 @@ tr:last-child td {
   line-height: 1.6;
 }
 
-.race-card span,
+.race-card .race-format,
 .live-list span,
 .news-card span {
   color: var(--gold);
   font-weight: 700;
+}
+
+.race-format {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  margin-top: 8px;
+  border: 1px solid rgba(246, 198, 91, 0.45);
+  border-radius: 999px;
+  background: rgba(246, 198, 91, 0.08);
+  padding: 0 18px;
+  font-family: Rajdhani, sans-serif;
+  text-transform: uppercase;
+}
+
+.race-format.sprint {
+  color: #f3ea28;
+  border-color: rgba(243, 234, 40, 0.5);
+  box-shadow: 0 0 18px rgba(243, 234, 40, 0.12);
+}
+
+.race-format.qualy {
+  color: #ffd447;
+}
+
+.race-format.normal {
+  color: #c293ff;
+  border-color: rgba(194, 147, 255, 0.5);
+}
+
+.track-map {
+  position: relative;
+  z-index: 1;
+  width: 160px;
+  height: 112px;
+  justify-self: center;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.28));
+}
+
+.track-map path {
+  fill: none;
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 6;
+}
+
+.next-race-panel {
+  position: sticky;
+  top: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(225, 6, 0, 0.22), transparent 35%),
+    var(--panel);
+  padding: 26px;
+  box-shadow: var(--shadow);
+}
+
+.panel-kicker {
+  margin-bottom: 14px;
+  color: var(--red);
+  font: 700 0.86rem Rajdhani, sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.next-race-panel h3 {
+  margin-bottom: 24px;
+  font-size: 1.65rem;
+}
+
+.race-detail-list {
+  display: grid;
+  gap: 0;
+  margin: 0 0 26px;
+}
+
+.race-detail-list div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.race-detail-list dt {
+  color: var(--muted);
+}
+
+.race-detail-list dd {
+  margin: 0;
+  font-weight: 700;
+}
+
+.calendar-button {
+  display: flex;
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+  background: var(--red);
+  color: #fff;
+  font: 700 0.95rem Rajdhani, sans-serif;
+  text-transform: uppercase;
 }
 
 .news-card,
@@ -785,11 +1021,35 @@ footer a {
     border-bottom: 1px solid var(--line);
   }
 
-  .race-card {
-    grid-template-columns: 1fr;
-  }
+    .race-card {
+      grid-template-columns: 1fr;
+    }
 
-  .live-list article {
+    .race-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .next-race-panel {
+      position: static;
+    }
+
+    .race-card::before {
+      inset: 120px 0 0;
+    }
+
+    .race-date {
+      min-height: 120px;
+    }
+
+    .race-card-main {
+      padding: 20px;
+    }
+
+    .track-map {
+      margin-bottom: 18px;
+    }
+
+    .live-list article {
     align-items: flex-start;
     flex-direction: column;
   }

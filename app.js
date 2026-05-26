@@ -13,6 +13,7 @@ const rankingMetricTwoHeader = document.querySelector("#rankingMetricTwoHeader")
 const totalDrivers = document.querySelector("#totalDrivers");
 const nextRaceDate = document.querySelector("#nextRaceDate");
 const raceList = document.querySelector("#raceList");
+const nextRacePanel = document.querySelector("#nextRacePanel");
 const newsGrid = document.querySelector("#newsGrid");
 const liveKpis = document.querySelector("#liveKpis");
 const liveList = document.querySelector("#liveList");
@@ -492,24 +493,63 @@ function renderRaces() {
   }
 
   raceList.innerHTML = championshipData.races.length
-    ? championshipData.races
-        .map(
-          (race) => `
-            <article class="race-card">
-              <div class="race-date">
-                <strong>${race.date}</strong>
-                <span>${race.time}</span>
-              </div>
-              <div>
-                <h3>${race.track}</h3>
-                <p>${race.series}</p>
-                <span>${race.format}</span>
-              </div>
-            </article>
-          `
-        )
-        .join("")
+    ? championshipData.races.map((race) => renderRaceCard(race)).join("")
     : `<article class="empty-card">Ainda nao ha corridas da ${getChampionshipLabel()} cadastradas.</article>`;
+
+  if (nextRacePanel) {
+    nextRacePanel.innerHTML = championshipData.races.length
+      ? renderNextRacePanel(championshipData.races[0])
+      : `<div class="empty-card">Ainda nao ha proxima corrida cadastrada.</div>`;
+  }
+}
+
+function renderRaceCard(race) {
+  return `
+    <article class="race-card race-visual-${race.visual ?? "default"}">
+      <div class="race-date">
+        <span class="race-date-icon">▦</span>
+        <strong>${race.date}</strong>
+        <span>${race.time}</span>
+      </div>
+      <div class="race-card-main">
+        <div class="race-flag">${race.flag ?? ""}</div>
+        <div>
+          <h3>${race.track}</h3>
+          <p>${race.series}</p>
+          <span class="race-format ${race.type ?? "normal"}">${race.format}</span>
+        </div>
+      </div>
+      <svg class="track-map" viewBox="0 0 200 140" aria-hidden="true">
+        <path d="${race.circuit ?? "M30 90 C60 30 120 30 150 80 C130 120 70 120 30 90"}" />
+      </svg>
+    </article>
+  `;
+}
+
+function renderNextRacePanel(race) {
+  return `
+    <p class="panel-kicker">Proxima corrida</p>
+    <h3>${race.track}</h3>
+    <dl class="race-detail-list">
+      <div>
+        <dt>Data</dt>
+        <dd>${race.date}</dd>
+      </div>
+      <div>
+        <dt>Horario</dt>
+        <dd>${race.time}</dd>
+      </div>
+      <div>
+        <dt>Series</dt>
+        <dd>${race.shortSeries ?? race.series}</dd>
+      </div>
+      <div>
+        <dt>Formato</dt>
+        <dd>${race.format}</dd>
+      </div>
+    </dl>
+    <a class="calendar-button" href="#raceList">Ver calendario completo</a>
+  `;
 }
 
 function renderNews() {
