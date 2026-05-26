@@ -1,6 +1,6 @@
 window.championshipData = {
   sheetSources: {
-    f2: {
+    f1: {
       rankings: {
         "Serie A": "https://docs.google.com/spreadsheets/d/1KWkrcpZXpvO2Cj8rc1_v9B9xr2QMRtbN_bSitTcaAl8/gviz/tq?tqx=out:csv&gid=0"
       }
