@@ -487,7 +487,8 @@ tr:last-child td {
   place-items: center;
   border-radius: 3px;
   color: #fff;
-  font-size: 0.78rem;
+  font-family: Arial, sans-serif;
+  font-size: 0.66rem;
   font-weight: 700;
   line-height: 1;
 }

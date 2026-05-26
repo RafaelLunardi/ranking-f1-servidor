@@ -152,14 +152,19 @@ function formatPoints(value) {
 
 function getMovementParts(value) {
   const movement = String(value || "").trim();
-  const symbol = movement.match(/[🔼⏫▲⬆️🔽▼⬇️◀️➡️=]/u)?.[0] || "=";
+  const rawSymbol = movement.match(/[🔼⏫▲⬆️🔽▼⬇️◀️➡️=]/u)?.[0] || "=";
   const label = movement.replace(/[🔼⏫▲⬆️🔽▼⬇️◀️➡️]/gu, "").trim() || "= 0";
   let direction = "same";
+  let symbol = rawSymbol;
 
   if (/🔼|⏫|▲|⬆️|\+\s*\d/.test(movement)) {
     direction = "up";
+    symbol = "▲";
   } else if (/🔽|▼|⬇️|-\s*\d/.test(movement)) {
     direction = "down";
+    symbol = "▼";
+  } else {
+    symbol = "▶";
   }
 
   return { direction, label, symbol };
