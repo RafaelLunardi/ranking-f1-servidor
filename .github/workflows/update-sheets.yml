@@ -1,0 +1,31 @@
+name: Atualizar dados do Google Sheets
+
+on:
+  schedule:
+    # 00h em Sao Paulo = 03h UTC.
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-sheets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Gerar dados da planilha
+        run: node scripts/update-sheet-data.cjs
+
+      - name: Commitar mudancas
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update sheet data"
+          file_pattern: sheet-data.js

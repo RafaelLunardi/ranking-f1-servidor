@@ -47,6 +47,13 @@ const emptyChampionshipData = {
   }
 };
 
+function applySheetSnapshot() {
+  const snapshot = window.sheetData?.[activeChampionship];
+  if (activeChampionship === "f2" && snapshot?.rankings) {
+    Object.assign(data.rankings, snapshot.rankings);
+  }
+}
+
 function getActiveData() {
   return activeChampionship === "f2" ? data : emptyChampionshipData;
 }
@@ -205,9 +212,9 @@ async function loadSheetRankings() {
 async function refreshFromSheets() {
   try {
     await loadSheetRankings();
-    renderTabs();
-    renderRanking(activeSeries);
-    renderSummary();
+      renderTabs();
+      renderRanking(activeSeries);
+      renderSummary();
   } catch (error) {
     console.warn("Nao foi possivel carregar dados do Google Sheets.", error);
   }
@@ -549,6 +556,7 @@ function renderSummary() {
 }
 
 markActivePage();
+applySheetSnapshot();
 renderChampionshipSwitches();
 renderRankingModes();
 renderTabs();
