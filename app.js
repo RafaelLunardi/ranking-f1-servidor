@@ -537,9 +537,10 @@ function renderRaceCard(race) {
           <span class="race-format ${race.type ?? "normal"}">${getFormatIcon(race.type ?? "normal")} ${race.format}</span>
         </div>
       </div>
-      <svg class="track-map" viewBox="0 0 200 140" aria-hidden="true">
-        <path d="${race.circuit ?? "M30 90 C60 30 120 30 150 80 C130 120 70 120 30 90"}" />
-      </svg>
+      ${race.circuitImg
+        ? `<img class="track-map track-map-img" src="${race.circuitImg}" alt="Traçado ${race.track}">`
+        : `<svg class="track-map" viewBox="0 0 200 140" aria-hidden="true"><path d="${race.circuit ?? "M30 90 C60 30 120 30 150 80 C130 120 70 120 30 90"}" /></svg>`
+      }
     </article>
   `;
 }

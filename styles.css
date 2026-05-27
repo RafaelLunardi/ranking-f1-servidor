@@ -801,6 +801,14 @@ body[data-page="corridas"] .eyebrow {
   stroke-width: 6;
 }
 
+/* PNG com fundo branco: invert torna o contorno branco, screen remove o fundo */
+.track-map-img {
+  object-fit: contain;
+  filter: invert(1) drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
+  mix-blend-mode: screen;
+  opacity: 0.75;
+}
+
 .next-race-panel {
   position: sticky;
   top: 18px;

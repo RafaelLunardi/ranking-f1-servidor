@@ -72,7 +72,7 @@ window.championshipData = {
       track: "GP do Brasil", country: "Brasil", flag: "🇧🇷",
       format: "Sprint + Corrida", type: "sprint", visual: "brazil",
       photo: "assets/circuits/brazil-race.jpg",
-      circuit: "M 65 30 C 72 14 92 7 108 12 C 124 17 126 32 119 44 C 112 56 104 54 111 41 C 118 28 134 8 150 10 C 166 12 176 28 175 48 C 174 68 162 84 146 93 C 130 102 112 109 96 117 C 80 125 60 129 44 121 C 28 113 22 99 26 85 C 30 71 42 65 48 73 C 54 81 50 95 42 105 C 34 115 36 125 46 127 C 56 129 68 121 74 109 C 80 97 76 83 70 75 C 66 69 64 50 65 38 Z"
+      circuitImg: "assets/circuits/brazil-circuit.png"
     },
     {
       date: "01/06", time: "20:30", series: "Séries C e D", shortSeries: "C e D",
