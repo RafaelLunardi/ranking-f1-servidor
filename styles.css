@@ -524,8 +524,7 @@ body[data-page="corridas"] .page-hero {
   min-height: 390px;
   background:
     linear-gradient(90deg, rgba(7, 8, 11, 1) 0%, rgba(7, 8, 11, 0.88) 44%, rgba(7, 8, 11, 0.22) 100%),
-    radial-gradient(circle at 80% 26%, rgba(225, 6, 0, 0.36), transparent 30%),
-    url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=80") right center / cover no-repeat;
+    url("assets/hero-calendario.jpg") right center / cover no-repeat;
 }
 
 body[data-page="corridas"] .page-title {
