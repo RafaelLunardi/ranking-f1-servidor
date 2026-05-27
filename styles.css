@@ -687,6 +687,7 @@ body[data-page="corridas"] .eyebrow {
   display: flex;
   align-items: center;
   gap: 18px;
+  padding: 20px 24px;
 }
 
 .race-flag {
