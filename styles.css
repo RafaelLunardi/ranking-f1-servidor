@@ -654,30 +654,17 @@ body[data-page="corridas"] .eyebrow {
   background:
     linear-gradient(90deg,
       rgba(7, 8, 11, 1) 0%,
-      rgba(7, 8, 11, 1) 180px,
-      rgba(7, 8, 11, 0.55) 50%,
-      rgba(7, 8, 11, 0.75) 72%,
+      rgba(7, 8, 11, 1) 175px,
+      rgba(7, 8, 11, 0.65) 45%,
+      rgba(7, 8, 11, 0.50) 58%,
+      rgba(7, 8, 11, 0.72) 75%,
       rgba(7, 8, 11, 0.96) 100%
     );
   pointer-events: none;
   z-index: 0;
 }
 
-.race-visual-brazil {
-  background-image: url("https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=900&q=80");
-}
-
-.race-visual-italy {
-  background-image: url("https://images.unsplash.com/photo-1571816119607-3b2da41736f7?w=900&q=80");
-}
-
-.race-visual-japan {
-  background-image: url("https://images.unsplash.com/photo-1547744231-9b5b82b39c74?w=900&q=80");
-}
-
-.race-visual-spain {
-  background-image: url("https://images.unsplash.com/photo-1541447271487-09612b3f49f7?w=900&q=80");
-}
+/* Fotos de circuito definidas em data.js via inline style */
 
 .race-date {
   height: 100%;

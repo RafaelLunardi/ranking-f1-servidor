@@ -517,8 +517,9 @@ function renderRaceFlag(flag, country) {
 }
 
 function renderRaceCard(race) {
+  const photoStyle = race.photo ? ` style="background-image: url('${race.photo}')"` : "";
   return `
-    <article class="race-card race-visual-${race.visual ?? "default"}">
+    <article class="race-card race-visual-${race.visual ?? "default"}"${photoStyle}>
       <div class="race-date">
         <svg class="race-date-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
           <rect x="3" y="4" width="14" height="13" rx="2" stroke="currentColor" stroke-width="1.5"/>

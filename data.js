@@ -67,10 +67,34 @@ window.championshipData = {
     ]
   },
   races: [
-    { date: "30/05", time: "21:00", series: "Series A e B", shortSeries: "A e B", track: "GP do Brasil", country: "Brasil", flag: "🇧🇷", format: "Sprint + Corrida", type: "sprint", visual: "brazil", circuit: "M32 74 C74 24 126 24 144 64 C162 104 116 128 88 94 C64 64 42 118 24 104" },
-    { date: "01/06", time: "20:30", series: "Series C e D", shortSeries: "C e D", track: "GP da Italia", country: "Italia", flag: "🇮🇹", format: "Classificacao curta", type: "qualy", visual: "italy", circuit: "M42 30 C82 18 130 40 118 74 C106 112 50 122 32 92 C16 64 58 58 42 30" },
-    { date: "04/06", time: "21:00", series: "Series E, F e G", shortSeries: "E, F e G", track: "GP do Japao", country: "Japao", flag: "🇯🇵", format: "Corrida normal", type: "normal", visual: "japan", circuit: "M30 96 C66 40 98 126 132 62 C158 18 178 92 128 108 C92 124 58 72 30 96" },
-    { date: "08/06", time: "21:00", series: "Series A e B", shortSeries: "A e B", track: "GP da Espanha", country: "Espanha", flag: "🇪🇸", format: "Corrida normal", type: "normal", visual: "spain", circuit: "M28 82 C54 32 104 44 126 28 C166 4 178 70 136 84 C92 98 86 132 48 116 C24 106 8 96 28 82" }
+    {
+      date: "30/05", time: "21:00", series: "Séries A e B", shortSeries: "A e B",
+      track: "GP do Brasil", country: "Brasil", flag: "🇧🇷",
+      format: "Sprint + Corrida", type: "sprint", visual: "brazil",
+      photo: "https://upload.wikimedia.org/wikipedia/commons/b/ba/Aut%C3%B3dromo_Jos%C3%A9_Carlos_Pace%2C_July_3%2C_2018_SkySat.jpg",
+      circuit: "M 35 110 C 35 128 55 136 80 128 C 108 120 136 104 148 80 C 158 60 154 36 138 24 C 122 12 98 11 78 18 C 54 25 32 44 30 66 C 28 88 30 100 35 110"
+    },
+    {
+      date: "01/06", time: "20:30", series: "Séries C e D", shortSeries: "C e D",
+      track: "GP da Itália", country: "Itália", flag: "🇮🇹",
+      format: "Classificação curta", type: "qualy", visual: "italy",
+      photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Autodromo_Nazionale_Monza%2C_April_22%2C_2018_SkySat_%28cropped%29.jpg/800px-Autodromo_Nazionale_Monza%2C_April_22%2C_2018_SkySat_%28cropped%29.jpg",
+      circuit: "M 100 18 C 128 14 158 26 168 52 C 178 78 164 104 142 112 L 132 107 L 140 118 L 128 122 L 120 111 C 97 122 70 120 50 108 C 30 96 24 70 34 50 L 41 45 L 33 35 L 44 28 L 51 39 C 66 23 82 20 100 18"
+    },
+    {
+      date: "04/06", time: "21:00", series: "Séries E, F e G", shortSeries: "E, F e G",
+      track: "GP do Japão", country: "Japão", flag: "🇯🇵",
+      format: "Corrida normal", type: "normal", visual: "japan",
+      photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Suzuka_International_Racing_Course%2C_July_10%2C_2018_SkySat_%28cropped%29.jpg/800px-Suzuka_International_Racing_Course%2C_July_10%2C_2018_SkySat_%28cropped%29.jpg",
+      circuit: "M 155 65 C 162 48 154 28 136 22 C 118 16 99 26 91 44 C 83 62 90 80 82 96 C 74 112 57 120 40 115 C 23 110 18 93 25 77 C 32 61 50 55 68 60 C 86 65 96 78 95 93 C 94 108 105 120 122 120 C 139 120 152 107 153 91 C 154 75 143 63 129 61 C 115 59 103 68 100 82"
+    },
+    {
+      date: "08/06", time: "21:00", series: "Séries A e B", shortSeries: "A e B",
+      track: "GP da Espanha", country: "Espanha", flag: "🇪🇸",
+      format: "Corrida normal", type: "normal", visual: "spain",
+      photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Circuit_de_Barcelona-Catalunya%2C_April_19%2C_2018_SkySat_%28cropped%29.jpg/800px-Circuit_de_Barcelona-Catalunya%2C_April_19%2C_2018_SkySat_%28cropped%29.jpg",
+      circuit: "M 158 46 C 165 34 156 20 130 18 C 104 16 74 23 54 37 C 34 51 27 72 36 89 C 45 106 66 114 88 111 C 110 108 126 96 130 80 C 132 72 127 65 118 64 C 109 63 102 69 101 78 C 100 87 107 97 120 98 C 135 99 150 88 157 73 C 163 59 161 50 158 46"
+    }
   ],
   news: [
     {
