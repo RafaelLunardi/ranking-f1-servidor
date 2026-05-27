@@ -517,9 +517,8 @@ function renderRaceFlag(flag, country) {
 }
 
 function renderRaceCard(race) {
-  const photoStyle = race.photo ? ` style="background-image: url('${race.photo}')"` : "";
   return `
-    <article class="race-card race-visual-${race.visual ?? "default"}"${photoStyle}>
+    <article class="race-card">
       <div class="race-date">
         <svg class="race-date-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
           <rect x="3" y="4" width="14" height="13" rx="2" stroke="currentColor" stroke-width="1.5"/>
@@ -537,10 +536,6 @@ function renderRaceCard(race) {
           <span class="race-format ${race.type ?? "normal"}">${getFormatIcon(race.type ?? "normal")} ${race.format}</span>
         </div>
       </div>
-      ${race.circuitImg
-        ? `<img class="track-map track-map-img" src="${race.circuitImg}" alt="Traçado ${race.track}">`
-        : `<svg class="track-map" viewBox="0 0 200 140" aria-hidden="true"><path d="${race.circuit ?? "M30 90 C60 30 120 30 150 80 C130 120 70 120 30 90"}" /></svg>`
-      }
     </article>
   `;
 }

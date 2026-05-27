@@ -636,35 +636,14 @@ body[data-page="corridas"] .eyebrow {
 
 .race-card {
   display: grid;
-  position: relative;
-  min-height: 132px;
-  grid-template-columns: 180px 1fr 190px;
-  gap: 24px;
+  grid-template-columns: 160px 1fr;
+  min-height: 120px;
   align-items: center;
   overflow: hidden;
-  border-color: rgba(255, 255, 255, 0.18);
-  background: var(--panel) center / cover no-repeat;
+  border-color: rgba(255, 255, 255, 0.12);
+  background: var(--panel);
   padding: 0;
 }
-
-.race-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(90deg,
-      rgba(7, 8, 11, 1) 0%,
-      rgba(7, 8, 11, 1) 175px,
-      rgba(7, 8, 11, 0.65) 45%,
-      rgba(7, 8, 11, 0.50) 58%,
-      rgba(7, 8, 11, 0.72) 75%,
-      rgba(7, 8, 11, 0.96) 100%
-    );
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* Fotos de circuito definidas em data.js via inline style */
 
 .race-date {
   height: 100%;
@@ -783,31 +762,6 @@ body[data-page="corridas"] .eyebrow {
   border-color: rgba(194, 147, 255, 0.5);
 }
 
-.track-map {
-  position: relative;
-  z-index: 1;
-  width: 160px;
-  height: 112px;
-  justify-self: center;
-  opacity: 0.65;
-  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.35));
-}
-
-.track-map path {
-  fill: none;
-  stroke: #fff;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 6;
-}
-
-/* PNG com fundo branco: invert torna o contorno branco, screen remove o fundo */
-.track-map-img {
-  object-fit: contain;
-  filter: invert(1) drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
-  mix-blend-mode: screen;
-  opacity: 0.75;
-}
 
 .next-race-panel {
   position: sticky;
