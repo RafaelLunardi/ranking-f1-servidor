@@ -503,20 +503,37 @@ function renderRaces() {
   }
 }
 
+function getFormatIcon(type) {
+  const icons = { sprint: "⚡", qualy: "⭐", normal: "⏱" };
+  return icons[type] || "🏁";
+}
+
+function renderRaceFlag(flag, country) {
+  const code = emojiToFlagCode(flag);
+  if (code) {
+    return `<img class="race-flag-img" src="https://flagcdn.com/w40/${code}.png" alt="${country ?? ""}">`;
+  }
+  return `<div class="race-flag">${flag ?? ""}</div>`;
+}
+
 function renderRaceCard(race) {
   return `
     <article class="race-card race-visual-${race.visual ?? "default"}">
       <div class="race-date">
-        <span class="race-date-icon">▦</span>
+        <svg class="race-date-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <rect x="3" y="4" width="14" height="13" rx="2" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M3 8h14" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M7 2v3M13 2v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
         <strong>${race.date}</strong>
         <span>${race.time}</span>
       </div>
       <div class="race-card-main">
-        <div class="race-flag">${race.flag ?? ""}</div>
+        ${renderRaceFlag(race.flag, race.country)}
         <div>
           <h3>${race.track}</h3>
-          <p>${race.series}</p>
-          <span class="race-format ${race.type ?? "normal"}">${race.format}</span>
+          <p>Séries ${race.shortSeries ?? race.series}</p>
+          <span class="race-format ${race.type ?? "normal"}">${getFormatIcon(race.type ?? "normal")} ${race.format}</span>
         </div>
       </div>
       <svg class="track-map" viewBox="0 0 200 140" aria-hidden="true">
@@ -528,27 +545,58 @@ function renderRaceCard(race) {
 
 function renderNextRacePanel(race) {
   return `
-    <p class="panel-kicker">Proxima corrida</p>
+    <p class="panel-kicker">Próxima corrida</p>
     <h3>${race.track}</h3>
     <dl class="race-detail-list">
       <div>
-        <dt>Data</dt>
+        <dt>
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" class="detail-icon">
+            <rect x="3" y="4" width="14" height="13" rx="2" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M3 8h14" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M7 2v3M13 2v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          Data
+        </dt>
         <dd>${race.date}</dd>
       </div>
       <div>
-        <dt>Horario</dt>
+        <dt>
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" class="detail-icon">
+            <circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M10 6v4l2.5 2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          Horário
+        </dt>
         <dd>${race.time}</dd>
       </div>
       <div>
-        <dt>Series</dt>
+        <dt>
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" class="detail-icon">
+            <path d="M4 4h12v8l-6 4-6-4V4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+          Séries
+        </dt>
         <dd>${race.shortSeries ?? race.series}</dd>
       </div>
       <div>
-        <dt>Formato</dt>
+        <dt>
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" class="detail-icon">
+            <path d="M11 3L5 11h6l-2 6 8-9h-6l2-5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+          Formato
+        </dt>
         <dd>${race.format}</dd>
       </div>
     </dl>
-    <a class="calendar-button" href="#raceList">Ver calendario completo</a>
+    <a class="calendar-button" href="#raceList">
+      <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" class="btn-icon">
+        <rect x="3" y="4" width="14" height="13" rx="2" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M3 8h14" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M7 2v3M13 2v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      Ver calendário completo
+      <span class="btn-arrow">›</span>
+    </a>
   `;
 }
 

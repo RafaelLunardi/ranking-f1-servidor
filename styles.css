@@ -523,11 +523,9 @@ tr:last-child td {
 body[data-page="corridas"] .page-hero {
   min-height: 390px;
   background:
-    linear-gradient(90deg, rgba(7, 8, 11, 0.98) 0%, rgba(7, 8, 11, 0.78) 42%, rgba(7, 8, 11, 0.34) 100%),
-    radial-gradient(circle at 80% 26%, rgba(225, 6, 0, 0.42), transparent 26%),
-    linear-gradient(150deg, transparent 36%, rgba(225, 6, 0, 0.22) 44%, transparent 52%),
-    repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 22px),
-    #07080b;
+    linear-gradient(90deg, rgba(7, 8, 11, 1) 0%, rgba(7, 8, 11, 0.88) 44%, rgba(7, 8, 11, 0.22) 100%),
+    radial-gradient(circle at 80% 26%, rgba(225, 6, 0, 0.36), transparent 30%),
+    url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=80") right center / cover no-repeat;
 }
 
 body[data-page="corridas"] .page-title {
@@ -559,8 +557,10 @@ body[data-page="corridas"] .eyebrow {
 }
 
 .race-title-icon {
+  width: 22px;
+  height: 22px;
   color: var(--red);
-  font-size: 1.3rem;
+  flex-shrink: 0;
 }
 
 .race-layout {
@@ -643,54 +643,46 @@ body[data-page="corridas"] .eyebrow {
   align-items: center;
   overflow: hidden;
   border-color: rgba(255, 255, 255, 0.18);
-  background:
-    linear-gradient(90deg, rgba(17, 19, 26, 0.98), rgba(17, 19, 26, 0.72) 52%, rgba(17, 19, 26, 0.96)),
-    var(--panel);
+  background: var(--panel) center / cover no-repeat;
   padding: 0;
 }
 
 .race-card::before {
   content: "";
   position: absolute;
-  inset: 0 190px 0 180px;
-  opacity: 0.72;
+  inset: 0;
   background:
-    linear-gradient(90deg, rgba(7, 8, 11, 0.96), rgba(7, 8, 11, 0.3), rgba(7, 8, 11, 0.92)),
-    radial-gradient(circle at 52% 40%, rgba(255, 255, 255, 0.22), transparent 24%),
-    linear-gradient(135deg, rgba(255, 255, 255, 0.08), transparent 48%);
+    linear-gradient(90deg,
+      rgba(7, 8, 11, 1) 0%,
+      rgba(7, 8, 11, 1) 180px,
+      rgba(7, 8, 11, 0.55) 50%,
+      rgba(7, 8, 11, 0.75) 72%,
+      rgba(7, 8, 11, 0.96) 100%
+    );
   pointer-events: none;
+  z-index: 0;
 }
 
-.race-visual-brazil::before {
-  background:
-    linear-gradient(90deg, rgba(7, 8, 11, 0.96), rgba(7, 8, 11, 0.28), rgba(7, 8, 11, 0.92)),
-    radial-gradient(circle at 50% 35%, rgba(251, 220, 24, 0.42), transparent 24%),
-    linear-gradient(145deg, rgba(16, 123, 69, 0.25), transparent 56%);
+.race-visual-brazil {
+  background-image: url("https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=900&q=80");
 }
 
-.race-visual-italy::before {
-  background:
-    linear-gradient(90deg, rgba(7, 8, 11, 0.96), rgba(7, 8, 11, 0.24), rgba(7, 8, 11, 0.92)),
-    linear-gradient(135deg, rgba(0, 146, 70, 0.24), transparent 36%),
-    radial-gradient(circle at 58% 48%, rgba(255, 255, 255, 0.28), transparent 28%);
+.race-visual-italy {
+  background-image: url("https://images.unsplash.com/photo-1571816119607-3b2da41736f7?w=900&q=80");
 }
 
-.race-visual-japan::before {
-  background:
-    linear-gradient(90deg, rgba(7, 8, 11, 0.96), rgba(7, 8, 11, 0.24), rgba(7, 8, 11, 0.92)),
-    radial-gradient(circle at 58% 42%, rgba(188, 0, 45, 0.35), transparent 25%),
-    linear-gradient(135deg, rgba(255, 255, 255, 0.12), transparent 48%);
+.race-visual-japan {
+  background-image: url("https://images.unsplash.com/photo-1547744231-9b5b82b39c74?w=900&q=80");
 }
 
-.race-visual-spain::before {
-  background:
-    linear-gradient(90deg, rgba(7, 8, 11, 0.96), rgba(7, 8, 11, 0.24), rgba(7, 8, 11, 0.92)),
-    radial-gradient(circle at 58% 42%, rgba(255, 204, 0, 0.32), transparent 26%),
-    linear-gradient(135deg, rgba(198, 11, 30, 0.28), transparent 52%);
+.race-visual-spain {
+  background-image: url("https://images.unsplash.com/photo-1541447271487-09612b3f49f7?w=900&q=80");
 }
 
 .race-date {
   height: 100%;
+  position: relative;
+  z-index: 1;
   display: grid;
   place-content: center;
   gap: 6px;
@@ -711,13 +703,16 @@ body[data-page="corridas"] .eyebrow {
 }
 
 .race-date span {
-  color: var(--red);
+  color: #fff;
   font: 700 1.35rem Rajdhani, sans-serif;
 }
 
 .race-date-icon {
-  color: #fff;
-  font-size: 1.2rem;
+  width: 20px;
+  height: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 auto 2px;
+  display: block;
 }
 
 .race-card-main {
@@ -737,6 +732,17 @@ body[data-page="corridas"] .eyebrow {
   background: rgba(255, 255, 255, 0.92);
   font-size: 1.45rem;
   box-shadow: 0 0 28px rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.race-flag-img {
+  width: 44px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+  box-shadow: 0 0 28px rgba(255, 255, 255, 0.12);
+  flex-shrink: 0;
 }
 
 .race-card h3,
@@ -796,7 +802,8 @@ body[data-page="corridas"] .eyebrow {
   width: 160px;
   height: 112px;
   justify-self: center;
-  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.28));
+  opacity: 0.65;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.35));
 }
 
 .track-map path {
@@ -841,18 +848,31 @@ body[data-page="corridas"] .eyebrow {
 .race-detail-list div {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 16px;
   padding: 14px 0;
   border-bottom: 1px solid var(--line);
 }
 
 .race-detail-list dt {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   color: var(--muted);
+  font-size: 0.9rem;
 }
 
 .race-detail-list dd {
   margin: 0;
   font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.detail-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  color: var(--red);
 }
 
 .calendar-button {
@@ -860,11 +880,29 @@ body[data-page="corridas"] .eyebrow {
   min-height: 50px;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   border-radius: var(--radius);
   background: var(--red);
   color: #fff;
   font: 700 0.95rem Rajdhani, sans-serif;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
+  transition: background 160ms ease;
+}
+
+.calendar-button:hover {
+  background: var(--red-dark);
+}
+
+.calendar-button .btn-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.calendar-button .btn-arrow {
+  font-size: 1.3rem;
+  line-height: 1;
+  margin-left: 2px;
 }
 
 .news-card,
