@@ -529,12 +529,14 @@ function renderRaceCard(race) {
         <span>${race.time}</span>
       </div>
       <div class="race-card-main">
-        ${renderRaceFlag(race.flag, race.country)}
-        <div>
-          <h3>${race.track}</h3>
-          <p>Séries ${race.shortSeries ?? race.series}</p>
-          <span class="race-format ${race.type ?? "normal"}">${getFormatIcon(race.type ?? "normal")} ${race.format}</span>
+        <div class="race-card-info">
+          ${renderRaceFlag(race.flag, race.country)}
+          <div>
+            <h3>${race.track}</h3>
+            <p>Séries ${race.shortSeries ?? race.series}</p>
+          </div>
         </div>
+        <span class="race-format ${race.type ?? "normal"}">${getFormatIcon(race.type ?? "normal")} ${race.format}</span>
       </div>
     </article>
   `;

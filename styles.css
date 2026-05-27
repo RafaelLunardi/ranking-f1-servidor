@@ -686,8 +686,15 @@ body[data-page="corridas"] .eyebrow {
   z-index: 1;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 18px;
-  padding: 20px 24px;
+  padding: 20px 28px 20px 24px;
+}
+
+.race-card-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .race-flag {
