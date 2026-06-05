@@ -1,31 +1,31 @@
 window.sheetData = {
-  "updatedAt": "2026-06-04T07:19:23.695Z",
+  "updatedAt": "2026-06-05T07:02:03.532Z",
   "f2": {
     "rankings": {
       "Serie A": [
         {
           "position": "01",
-          "driver": "JuninhoGameplay",
-          "country": "BRA",
-          "flag": "🇧🇷",
-          "team": "Sem construtor",
-          "points": 33,
-          "pointsLabel": "33,00",
-          "movement": "🔼 + 2",
-          "nc": 2,
-          "dnf": "0,00%"
-        },
-        {
-          "position": "02",
           "driver": "lipe0204",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
-          "points": 29.5,
-          "pointsLabel": "29,50",
-          "movement": "🔼 + 2",
-          "nc": 2,
-          "dnf": "16,28%"
+          "points": 45.5,
+          "pointsLabel": "45,50",
+          "movement": "🔼 + 1",
+          "nc": 1,
+          "dnf": "15,91%"
+        },
+        {
+          "position": "02",
+          "driver": "JuninhoGameplay",
+          "country": "BRA",
+          "flag": "🇧🇷",
+          "team": "Sem construtor",
+          "points": 41,
+          "pointsLabel": "41,00",
+          "movement": "🔽 - 1",
+          "nc": -1,
+          "dnf": "0,00%"
         },
         {
           "position": "03",
@@ -35,8 +35,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 26,
           "pointsLabel": "26,00",
-          "movement": "🔽 - 2",
-          "nc": -2,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "33,33%"
         },
         {
@@ -47,69 +47,69 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 26,
           "pointsLabel": "26,00",
-          "movement": "⏫ + 25",
-          "nc": 25,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "0,00%"
         },
         {
           "position": "05",
+          "driver": "PRTCarvalho",
+          "country": "BRA",
+          "flag": "🇧🇷",
+          "team": "Sem construtor",
+          "points": 26,
+          "pointsLabel": "26,00",
+          "movement": "⏫ + 28",
+          "nc": 28,
+          "dnf": "14,29%"
+        },
+        {
+          "position": "06",
+          "driver": "andrxss",
+          "country": "ESP",
+          "flag": "🇪🇸",
+          "team": "Sem construtor",
+          "points": 25,
+          "pointsLabel": "25,00",
+          "movement": "⏫ + 5",
+          "nc": 5,
+          "dnf": "32,43%"
+        },
+        {
+          "position": "07",
           "driver": "fjsapi",
           "country": "ESP",
           "flag": "🇪🇸",
           "team": "Sem construtor",
           "points": 24,
           "pointsLabel": "24,00",
-          "movement": "🔽 - 3",
-          "nc": -3,
+          "movement": "🔽 - 2",
+          "nc": -2,
           "dnf": "0,00%"
         },
         {
-          "position": "06",
-          "driver": "Dudu Reeves",
-          "country": "BRA",
-          "flag": "🇧🇷",
-          "team": "Sem construtor",
-          "points": 13,
-          "pointsLabel": "13,00",
-          "movement": "🔽 - 1",
-          "nc": -1,
-          "dnf": "11,11%"
-        },
-        {
-          "position": "07",
-          "driver": "Barbudo",
-          "country": "BRA",
-          "flag": "🇧🇷",
-          "team": "Sem construtor",
-          "points": 12.5,
-          "pointsLabel": "12,50",
-          "movement": "🔽 - 1",
-          "nc": -1,
-          "dnf": "12,50%"
-        },
-        {
           "position": "08",
+          "driver": "ViT1N",
+          "country": "BRA",
+          "flag": "🇧🇷",
+          "team": "Sem construtor",
+          "points": 17,
+          "pointsLabel": "17,00",
+          "movement": "⏫ + 8",
+          "nc": 8,
+          "dnf": "23,81%"
+        },
+        {
+          "position": "09",
           "driver": "I_need_a_DOCTOR",
           "country": "CAN",
           "flag": "🇨🇦",
           "team": "Sem construtor",
-          "points": 12,
-          "pointsLabel": "12,00",
-          "movement": "⏫ + 7",
-          "nc": 7,
-          "dnf": "38,10%"
-        },
-        {
-          "position": "09",
-          "driver": "RuanPbl",
-          "country": "BRA",
-          "flag": "🇧🇷",
-          "team": "Sem construtor",
-          "points": 12,
-          "pointsLabel": "12,00",
-          "movement": "🔽 - 2",
-          "nc": -2,
-          "dnf": "11,11%"
+          "points": 14,
+          "pointsLabel": "14,00",
+          "movement": "🔽 - 1",
+          "nc": -1,
+          "dnf": "36,36%"
         },
         {
           "position": "10",
@@ -117,86 +117,136 @@ window.sheetData = {
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
-          "points": 12,
-          "pointsLabel": "12,00",
+          "points": 13,
+          "pointsLabel": "13,00",
           "movement": "🔽 - 1",
           "nc": -1,
-          "dnf": "13,64%"
+          "dnf": "13,04%"
         },
         {
           "position": "11",
-          "driver": "andrxss",
-          "country": "ESP",
-          "flag": "🇪🇸",
+          "driver": "Dudu Reeves",
+          "country": "BRA",
+          "flag": "🇧🇷",
           "team": "Sem construtor",
-          "points": 10,
-          "pointsLabel": "10,00",
-          "movement": "🔼 + 4",
-          "nc": 4,
-          "dnf": "33,33%"
+          "points": 13,
+          "pointsLabel": "13,00",
+          "movement": "⏬ - 5",
+          "nc": -5,
+          "dnf": "11,11%"
         },
         {
           "position": "12",
+          "driver": "Barbudo",
+          "country": "BRA",
+          "flag": "🇧🇷",
+          "team": "Sem construtor",
+          "points": 12.5,
+          "pointsLabel": "12,50",
+          "movement": "⏬ - 5",
+          "nc": -5,
+          "dnf": "12,50%"
+        },
+        {
+          "position": "13",
+          "driver": "RuanPbl",
+          "country": "BRA",
+          "flag": "🇧🇷",
+          "team": "Sem construtor",
+          "points": 12,
+          "pointsLabel": "12,00",
+          "movement": "🔽 - 4",
+          "nc": -4,
+          "dnf": "10,53%"
+        },
+        {
+          "position": "14",
+          "driver": "back",
+          "country": "BRA",
+          "flag": "🇧🇷",
+          "team": "Sem construtor",
+          "points": 10,
+          "pointsLabel": "10,00",
+          "movement": "⏫ + 5",
+          "nc": 5,
+          "dnf": "31,82%"
+        },
+        {
+          "position": "15",
           "driver": "Srta_Dark_T",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 10,
           "pointsLabel": "10,00",
-          "movement": "◀️ = 0",
-          "nc": 0,
-          "dnf": "0,00%"
+          "movement": "🔽 - 2",
+          "nc": -2,
+          "dnf": "33,33%"
         },
         {
-          "position": "13",
+          "position": "16",
           "driver": "Zana",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 9,
           "pointsLabel": "9,00",
-          "movement": "🔽 - 4",
-          "nc": -4,
+          "movement": "🔽 - 3",
+          "nc": -3,
           "dnf": "50,00%"
         },
         {
-          "position": "14",
+          "position": "17",
           "driver": "JoaoTwcod",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 8,
           "pointsLabel": "8,00",
-          "movement": "🔽 - 4",
-          "nc": -4,
-          "dnf": "29,17%"
+          "movement": "🔽 - 3",
+          "nc": -3,
+          "dnf": "28,00%"
         },
         {
-          "position": "15",
+          "position": "18",
           "driver": "UrsoSenna",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 7.5,
           "pointsLabel": "7,50",
-          "movement": "🔽 - 4",
-          "nc": -4,
-          "dnf": "15,38%"
+          "movement": "🔽 - 3",
+          "nc": -3,
+          "dnf": "15,00%"
         },
         {
-          "position": "16",
-          "driver": "ViT1N",
+          "position": "19",
+          "driver": "Rezende_rz",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
-          "points": 5,
-          "pointsLabel": "5,00",
-          "movement": "🔽 - 3",
-          "nc": -3,
-          "dnf": "25,00%"
+          "points": 6,
+          "pointsLabel": "6,00",
+          "movement": "⏫ + 6",
+          "nc": 6,
+          "dnf": "18,42%"
         },
         {
-          "position": "17",
+          "position": "20",
+          "driver": "BreakingBench",
+          "country": "BRA",
+          "flag": "🇧🇷",
+          "team": "Sem construtor",
+          "points": 4,
+          "pointsLabel": "4,00",
+          "movement": "⏫ + 12",
+          "nc": 12,
+          "dnf": "0,00%"
+        }
+      ],
+      "Serie B": [
+        {
+          "position": "01",
           "driver": "Moitipo",
           "country": "BRA",
           "flag": "🇧🇷",
@@ -205,22 +255,22 @@ window.sheetData = {
           "pointsLabel": "1,00",
           "movement": "🔽 - 4",
           "nc": -4,
-          "dnf": "23,08%"
+          "dnf": "21,43%"
         },
         {
-          "position": "18",
+          "position": "02",
           "driver": "TM Poseidon",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 1,
           "pointsLabel": "1,00",
-          "movement": "⏫ + 11",
-          "nc": 11,
-          "dnf": "27,78%"
+          "movement": "🔽 - 4",
+          "nc": -4,
+          "dnf": "31,58%"
         },
         {
-          "position": "19",
+          "position": "03",
           "driver": "Glauco [BR]",
           "country": "BRA",
           "flag": "🇧🇷",
@@ -229,24 +279,10 @@ window.sheetData = {
           "pointsLabel": "0,00",
           "movement": "🔽 - 4",
           "nc": -4,
-          "dnf": "13,16%"
+          "dnf": "12,82%"
         },
         {
-          "position": "20",
-          "driver": "Omg_iz-ghOst",
-          "country": "BRA",
-          "flag": "🇧🇷",
-          "team": "Sem construtor",
-          "points": 0,
-          "pointsLabel": "0,00",
-          "movement": "🔽 - 4",
-          "nc": -4,
-          "dnf": "40,00%"
-        }
-      ],
-      "Serie B": [
-        {
-          "position": "01",
+          "position": "04",
           "driver": "CoyoteLoko",
           "country": "BRA",
           "flag": "🇧🇷",
@@ -255,142 +291,130 @@ window.sheetData = {
           "pointsLabel": "0,00",
           "movement": "🔽 - 4",
           "nc": -4,
-          "dnf": "35,71%"
+          "dnf": "33,33%"
         },
         {
-          "position": "02",
-          "driver": "back",
+          "position": "05",
+          "driver": "Omg_iz-ghOst",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "🔼 + 1",
-          "nc": 1,
-          "dnf": "33,33%"
+          "movement": "⏬ - 6",
+          "nc": -6,
+          "dnf": "40,00%"
         },
         {
-          "position": "03",
+          "position": "06",
           "driver": "junniorkz",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "🔼 + 1",
-          "nc": 1,
+          "movement": "⏬ - 6",
+          "nc": -6,
           "dnf": "50,00%"
         },
         {
-          "position": "04",
+          "position": "07",
           "driver": "L1peZxZ",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "🔼 + 1",
-          "nc": 1,
+          "movement": "⏬ - 6",
+          "nc": -6,
           "dnf": "100,00%"
         },
         {
-          "position": "05",
-          "driver": "IsmuYa",
-          "country": "BRA",
-          "flag": "🇧🇷",
-          "team": "Sem construtor",
-          "points": 0,
-          "pointsLabel": "0,00",
-          "movement": "⏬ - 5",
-          "nc": -5,
-          "dnf": "57,14%"
-        },
-        {
-          "position": "06",
-          "driver": "Enzo24M",
-          "country": "BRA",
-          "flag": "🇧🇷",
-          "team": "Sem construtor",
-          "points": 0,
-          "pointsLabel": "0,00",
-          "movement": "⏬ - 5",
-          "nc": -5,
-          "dnf": "23,53%"
-        },
-        {
-          "position": "07",
-          "driver": "Fer",
-          "country": "BRA",
-          "flag": "🇧🇷",
-          "team": "Sem construtor",
-          "points": 0,
-          "pointsLabel": "0,00",
-          "movement": "⏬ - 5",
-          "nc": -5,
-          "dnf": "37,50%"
-        },
-        {
           "position": "08",
-          "driver": "LucastBorges",
-          "country": "BRA",
-          "flag": "🇧🇷",
-          "team": "Sem construtor",
-          "points": 0,
-          "pointsLabel": "0,00",
-          "movement": "⏬ - 5",
-          "nc": -5,
-          "dnf": "50,00%"
-        },
-        {
-          "position": "09",
-          "driver": "Tony_Uru",
-          "country": "URU",
-          "flag": "🇺🇾",
-          "team": "Sem construtor",
-          "points": 0,
-          "pointsLabel": "0,00",
-          "movement": "⏬ - 5",
-          "nc": -5,
-          "dnf": "60,00%"
-        },
-        {
-          "position": "10",
           "driver": "PHMN",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏬ - 5",
-          "nc": -5,
-          "dnf": "50,00%"
+          "movement": "◀️ = 0",
+          "nc": 0,
+          "dnf": "46,15%"
+        },
+        {
+          "position": "09",
+          "driver": "IsmuYa",
+          "country": "BRA",
+          "flag": "🇧🇷",
+          "team": "Sem construtor",
+          "points": 0,
+          "pointsLabel": "0,00",
+          "movement": "🔽 - 4",
+          "nc": -4,
+          "dnf": "57,14%"
+        },
+        {
+          "position": "10",
+          "driver": "Enzo24M",
+          "country": "BRA",
+          "flag": "🇧🇷",
+          "team": "Sem construtor",
+          "points": 0,
+          "pointsLabel": "0,00",
+          "movement": "🔽 - 4",
+          "nc": -4,
+          "dnf": "23,53%"
         },
         {
           "position": "11",
-          "driver": "Rezende_rz",
+          "driver": "Fer",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "🔼 + 4",
-          "nc": 4,
-          "dnf": "18,92%"
+          "movement": "🔽 - 4",
+          "nc": -4,
+          "dnf": "37,50%"
         },
         {
           "position": "12",
-          "driver": "PRTCarvalho",
+          "driver": "LucastBorges",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "🔽 - 3",
-          "nc": -3,
-          "dnf": "15,00%"
+          "movement": "🔽 - 4",
+          "nc": -4,
+          "dnf": "50,00%"
         },
         {
           "position": "13",
+          "driver": "Tony_Uru",
+          "country": "URU",
+          "flag": "🇺🇾",
+          "team": "Sem construtor",
+          "points": 0,
+          "pointsLabel": "0,00",
+          "movement": "🔽 - 4",
+          "nc": -4,
+          "dnf": "60,00%"
+        },
+        {
+          "position": "14",
+          "driver": "Rodrigomaia_",
+          "country": "BRA",
+          "flag": "🇧🇷",
+          "team": "Sem construtor",
+          "points": 0,
+          "pointsLabel": "0,00",
+          "movement": "🔼 + 3",
+          "nc": 3,
+          "dnf": "7,14%"
+        },
+        {
+          "position": "15",
           "driver": "willaxbox",
           "country": "BRA",
           "flag": "🇧🇷",
@@ -402,7 +426,7 @@ window.sheetData = {
           "dnf": "-"
         },
         {
-          "position": "14",
+          "position": "16",
           "driver": "ARM BUNFL",
           "country": "BRA",
           "flag": "🇧🇷",
@@ -414,19 +438,7 @@ window.sheetData = {
           "dnf": "0,00%"
         },
         {
-          "position": "15",
-          "driver": "BreakingBench",
-          "country": "BRA",
-          "flag": "🇧🇷",
-          "team": "Sem construtor",
-          "points": 0,
-          "pointsLabel": "0,00",
-          "movement": "🔽 - 3",
-          "nc": -3,
-          "dnf": "0,00%"
-        },
-        {
-          "position": "16",
+          "position": "17",
           "driver": "GAMER",
           "country": "BRA",
           "flag": "🇧🇷",
@@ -438,7 +450,7 @@ window.sheetData = {
           "dnf": "-"
         },
         {
-          "position": "17",
+          "position": "18",
           "driver": "SCHUCHTER",
           "country": "BRA",
           "flag": "🇧🇷",
@@ -450,7 +462,7 @@ window.sheetData = {
           "dnf": "-"
         },
         {
-          "position": "18",
+          "position": "19",
           "driver": "shadoww",
           "country": "ESP",
           "flag": "🇪🇸",
@@ -462,7 +474,7 @@ window.sheetData = {
           "dnf": "-"
         },
         {
-          "position": "19",
+          "position": "20",
           "driver": "arleking",
           "country": "MEX",
           "flag": "🇲🇽",
@@ -472,9 +484,11 @@ window.sheetData = {
           "movement": "🔽 - 3",
           "nc": -3,
           "dnf": "60,00%"
-        },
+        }
+      ],
+      "Serie C": [
         {
-          "position": "20",
+          "position": "01",
           "driver": "deri",
           "country": "BRA",
           "flag": "🇧🇷",
@@ -484,11 +498,9 @@ window.sheetData = {
           "movement": "🔽 - 3",
           "nc": -3,
           "dnf": "46,15%"
-        }
-      ],
-      "Serie C": [
+        },
         {
-          "position": "01",
+          "position": "02",
           "driver": "ReD",
           "country": "BRA",
           "flag": "🇧🇷",
@@ -500,7 +512,7 @@ window.sheetData = {
           "dnf": "5,00%"
         },
         {
-          "position": "02",
+          "position": "03",
           "driver": "Alexander_Gui",
           "country": "BRA",
           "flag": "🇧🇷",
@@ -512,7 +524,7 @@ window.sheetData = {
           "dnf": "71,43%"
         },
         {
-          "position": "03",
+          "position": "04",
           "driver": "murf",
           "country": "THA",
           "flag": "🇹🇭",
@@ -524,7 +536,7 @@ window.sheetData = {
           "dnf": "100,00%"
         },
         {
-          "position": "04",
+          "position": "05",
           "driver": "millo_bello",
           "country": "CZE",
           "flag": "🇨🇿",
@@ -536,7 +548,7 @@ window.sheetData = {
           "dnf": "33,33%"
         },
         {
-          "position": "05",
+          "position": "06",
           "driver": "bruno",
           "country": "BRA",
           "flag": "🇧🇷",
@@ -548,7 +560,7 @@ window.sheetData = {
           "dnf": "-"
         },
         {
-          "position": "06",
+          "position": "07",
           "driver": "Puga",
           "country": "BRA",
           "flag": "🇧🇷",
@@ -560,7 +572,7 @@ window.sheetData = {
           "dnf": "-"
         },
         {
-          "position": "07",
+          "position": "08",
           "driver": "DiegoAnonimo",
           "country": "BRA",
           "flag": "🇧🇷",
@@ -572,7 +584,7 @@ window.sheetData = {
           "dnf": "-"
         },
         {
-          "position": "08",
+          "position": "09",
           "driver": "Liine e Teteu",
           "country": "BRA",
           "flag": "🇧🇷",
@@ -584,7 +596,7 @@ window.sheetData = {
           "dnf": "0,00%"
         },
         {
-          "position": "09",
+          "position": "10",
           "driver": "Paulo Inigo",
           "country": "BRA",
           "flag": "🇧🇷",
@@ -596,7 +608,7 @@ window.sheetData = {
           "dnf": "5,56%"
         },
         {
-          "position": "10",
+          "position": "11",
           "driver": "Max Verstappen",
           "country": "BRA",
           "flag": "🇧🇷",
@@ -608,7 +620,7 @@ window.sheetData = {
           "dnf": "22,22%"
         },
         {
-          "position": "11",
+          "position": "12",
           "driver": "ValdineyGamer_YT",
           "country": "BRA",
           "flag": "🇧🇷",
@@ -620,7 +632,7 @@ window.sheetData = {
           "dnf": "8,00%"
         },
         {
-          "position": "12",
+          "position": "13",
           "driver": "ARM_Theuz_B",
           "country": "BRA",
           "flag": "🇧🇷",
@@ -630,18 +642,6 @@ window.sheetData = {
           "movement": "🔽 - 3",
           "nc": -3,
           "dnf": "25,00%"
-        },
-        {
-          "position": "13",
-          "driver": "Rodrigomaia_",
-          "country": "BRA",
-          "flag": "🇧🇷",
-          "team": "Sem construtor",
-          "points": 0,
-          "pointsLabel": "0,00",
-          "movement": "🔽 - 3",
-          "nc": -3,
-          "dnf": "7,69%"
         },
         {
           "position": "14",
@@ -1353,8 +1353,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "#N/A",
-          "nc": 0,
+          "movement": "🔽 - 3",
+          "nc": -3,
           "dnf": "-"
         },
         {
@@ -1383,7 +1383,7 @@ window.sheetData = {
         },
         {
           "position": "15",
-          "driver": "F2",
+          "driver": "BZK_tahariel",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
@@ -1592,6 +1592,18 @@ window.sheetData = {
           "driver": "KingOfThegolpe",
           "country": "BRA",
           "flag": "🇧🇷",
+          "team": "Sem construtor",
+          "points": 0,
+          "pointsLabel": "0,00",
+          "movement": "🔽 - 3",
+          "nc": -3,
+          "dnf": "-"
+        },
+        {
+          "position": "13",
+          "driver": "SGC-RICHIE",
+          "country": "MEX",
+          "flag": "🇲🇽",
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
