@@ -1,5 +1,5 @@
 window.sheetData = {
-  "updatedAt": "2026-06-05T07:02:03.532Z",
+  "updatedAt": "2026-06-06T06:23:12.756Z",
   "f2": {
     "rankings": {
       "Serie A": [
@@ -1311,15 +1311,15 @@ window.sheetData = {
         },
         {
           "position": "09",
-          "driver": "WIZE",
-          "country": "BRA",
-          "flag": "🇧🇷",
+          "driver": "Sic-wolf",
+          "country": "???",
+          "flag": "",
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "🔽 - 3",
-          "nc": -3,
-          "dnf": "33,33%"
+          "movement": "#N/A",
+          "nc": 0,
+          "dnf": "-"
         },
         {
           "position": "10",
