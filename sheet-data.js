@@ -1,5 +1,5 @@
 window.sheetData = {
-  "updatedAt": "2026-06-11T07:24:58.739Z",
+  "updatedAt": "2026-06-12T07:17:07.286Z",
   "f2": {
     "rankings": {
       "Serie A": [
@@ -9,8 +9,8 @@ window.sheetData = {
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
-          "points": 68,
-          "pointsLabel": "68,00",
+          "points": 83,
+          "pointsLabel": "83,00",
           "movement": "◀️ = 0",
           "nc": 0,
           "dnf": "14,29%"
@@ -21,122 +21,134 @@ window.sheetData = {
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
-          "points": 48,
-          "pointsLabel": "48,00",
+          "points": 63,
+          "pointsLabel": "63,00",
           "movement": "◀️ = 0",
           "nc": 0,
-          "dnf": "14,89%"
+          "dnf": "14,58%"
         },
         {
           "position": "03",
-          "driver": "I_need_a_DOCTOR",
-          "country": "CAN",
-          "flag": "🇨🇦",
-          "team": "Sem construtor",
-          "points": 45,
-          "pointsLabel": "45,00",
-          "movement": "◀️ = 0",
-          "nc": 0,
-          "dnf": "32,00%"
-        },
-        {
-          "position": "04",
-          "driver": "ViT1N",
-          "country": "BRA",
-          "flag": "🇧🇷",
-          "team": "Sem construtor",
-          "points": 45,
-          "pointsLabel": "45,00",
-          "movement": "◀️ = 0",
-          "nc": 0,
-          "dnf": "20,83%"
-        },
-        {
-          "position": "05",
-          "driver": "RuanPbl",
-          "country": "BRA",
-          "flag": "🇧🇷",
-          "team": "Sem construtor",
-          "points": 43,
-          "pointsLabel": "43,00",
-          "movement": "◀️ = 0",
-          "nc": 0,
-          "dnf": "13,04%"
-        },
-        {
-          "position": "06",
           "driver": "PHX Erick",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
-          "points": 35,
-          "pointsLabel": "35,00",
-          "movement": "⏫ + 13",
-          "nc": 13,
-          "dnf": "15,79%"
+          "points": 53,
+          "pointsLabel": "53,00",
+          "movement": "🔼 + 3",
+          "nc": 3,
+          "dnf": "15,00%"
+        },
+        {
+          "position": "04",
+          "driver": "vSpiritWilo",
+          "country": "FRA",
+          "flag": "🇫🇷",
+          "team": "Sem construtor",
+          "points": 52,
+          "pointsLabel": "52,00",
+          "movement": "⏫ + 5",
+          "nc": 5,
+          "dnf": "36,36%"
+        },
+        {
+          "position": "05",
+          "driver": "I_need_a_DOCTOR",
+          "country": "CAN",
+          "flag": "🇨🇦",
+          "team": "Sem construtor",
+          "points": 51,
+          "pointsLabel": "51,00",
+          "movement": "🔽 - 2",
+          "nc": -2,
+          "dnf": "32,00%"
+        },
+        {
+          "position": "06",
+          "driver": "RuanPbl",
+          "country": "BRA",
+          "flag": "🇧🇷",
+          "team": "Sem construtor",
+          "points": 51,
+          "pointsLabel": "51,00",
+          "movement": "🔽 - 1",
+          "nc": -1,
+          "dnf": "16,67%"
         },
         {
           "position": "07",
+          "driver": "ViT1N",
+          "country": "BRA",
+          "flag": "🇧🇷",
+          "team": "Sem construtor",
+          "points": 51,
+          "pointsLabel": "51,00",
+          "movement": "🔽 - 4",
+          "nc": -4,
+          "dnf": "20,83%"
+        },
+        {
+          "position": "08",
+          "driver": "Paulo Inigo",
+          "country": "BRA",
+          "flag": "🇧🇷",
+          "team": "Sem construtor",
+          "points": 31,
+          "pointsLabel": "31,00",
+          "movement": "⏫ + 8",
+          "nc": 8,
+          "dnf": "5,00%"
+        },
+        {
+          "position": "09",
           "driver": "fjsapi",
           "country": "ESP",
           "flag": "🇪🇸",
           "team": "Sem construtor",
           "points": 30,
           "pointsLabel": "30,00",
-          "movement": "🔽 - 1",
-          "nc": -1,
+          "movement": "🔽 - 2",
+          "nc": -2,
           "dnf": "0,00%"
         },
         {
-          "position": "08",
+          "position": "10",
+          "driver": "PMT JoaoTwcod",
+          "country": "BRA",
+          "flag": "🇧🇷",
+          "team": "Sem construtor",
+          "points": 30,
+          "pointsLabel": "30,00",
+          "movement": "🔼 + 1",
+          "nc": 1,
+          "dnf": "27,59%"
+        },
+        {
+          "position": "11",
           "driver": "PRTCarvalho",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 28,
           "pointsLabel": "28,00",
-          "movement": "🔽 - 1",
-          "nc": -1,
+          "movement": "🔽 - 3",
+          "nc": -3,
           "dnf": "13,64%"
         },
         {
-          "position": "09",
-          "driver": "vSpiritWilo",
-          "country": "FRA",
-          "flag": "🇫🇷",
-          "team": "Sem construtor",
-          "points": 26,
-          "pointsLabel": "26,00",
-          "movement": "🔽 - 1",
-          "nc": -1,
-          "dnf": "40,00%"
-        },
-        {
-          "position": "10",
+          "position": "12",
           "driver": "Vegenakki",
           "country": "FIN",
           "flag": "🇫🇮",
           "team": "Sem construtor",
           "points": 26,
           "pointsLabel": "26,00",
-          "movement": "🔽 - 1",
-          "nc": -1,
+          "movement": "🔽 - 2",
+          "nc": -2,
           "dnf": "0,00%"
         },
         {
-          "position": "11",
-          "driver": "PMT JoaoTwcod",
-          "country": "BRA",
-          "flag": "🇧🇷",
-          "team": "Sem construtor",
-          "points": 26,
-          "pointsLabel": "26,00",
-          "movement": "🔽 - 1",
-          "nc": -1,
-          "dnf": "25,00%"
-        },
-        {
-          "position": "12",
+          "position": "13",
           "driver": "andrxss",
           "country": "ESP",
           "flag": "🇪🇸",
@@ -148,7 +160,7 @@ window.sheetData = {
           "dnf": "34,21%"
         },
         {
-          "position": "13",
+          "position": "14",
           "driver": "Zana",
           "country": "BRA",
           "flag": "🇧🇷",
@@ -157,19 +169,7 @@ window.sheetData = {
           "pointsLabel": "24,00",
           "movement": "🔽 - 1",
           "nc": -1,
-          "dnf": "40,00%"
-        },
-        {
-          "position": "14",
-          "driver": "Dudu Reeves",
-          "country": "BRA",
-          "flag": "🇧🇷",
-          "team": "Sem construtor",
-          "points": 23,
-          "pointsLabel": "23,00",
-          "movement": "🔽 - 1",
-          "nc": -1,
-          "dnf": "10,00%"
+          "dnf": "50,00%"
         },
         {
           "position": "15",
@@ -177,23 +177,23 @@ window.sheetData = {
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
-          "points": 22,
-          "pointsLabel": "22,00",
-          "movement": "🔽 - 1",
-          "nc": -1,
+          "points": 23,
+          "pointsLabel": "23,00",
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "15,38%"
         },
         {
           "position": "16",
-          "driver": "Paulo Inigo",
+          "driver": "Dudu Reeves",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
-          "points": 19,
-          "pointsLabel": "19,00",
-          "movement": "⏫ + 41",
-          "nc": 41,
-          "dnf": "5,26%"
+          "points": 23,
+          "pointsLabel": "23,00",
+          "movement": "🔽 - 2",
+          "nc": -2,
+          "dnf": "18,18%"
         },
         {
           "position": "17",
@@ -201,64 +201,88 @@ window.sheetData = {
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
-          "points": 17,
-          "pointsLabel": "17,00",
-          "movement": "⏫ + 7",
-          "nc": 7,
-          "dnf": "5,88%"
+          "points": 19,
+          "pointsLabel": "19,00",
+          "movement": "◀️ = 0",
+          "nc": 0,
+          "dnf": "5,56%"
         },
         {
           "position": "18",
+          "driver": "Rezende_rz",
+          "country": "BRA",
+          "flag": "🇧🇷",
+          "team": "Sem construtor",
+          "points": 16,
+          "pointsLabel": "16,00",
+          "movement": "⏫ + 8",
+          "nc": 8,
+          "dnf": "20,00%"
+        },
+        {
+          "position": "19",
           "driver": "CoyoteLoko",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 14,
           "pointsLabel": "14,00",
-          "movement": "🔽 - 2",
-          "nc": -2,
-          "dnf": "33,33%"
+          "movement": "🔽 - 1",
+          "nc": -1,
+          "dnf": "36,84%"
         },
         {
-          "position": "19",
+          "position": "20",
           "driver": "Barbudo",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 12.5,
           "pointsLabel": "12,50",
-          "movement": "🔽 - 4",
-          "nc": -4,
+          "movement": "🔽 - 1",
+          "nc": -1,
           "dnf": "12,50%"
+        }
+      ],
+      "Serie B": [
+        {
+          "position": "01",
+          "driver": "Moitipo",
+          "country": "BRA",
+          "flag": "🇧🇷",
+          "team": "Sem construtor",
+          "points": 12,
+          "pointsLabel": "12,00",
+          "movement": "⏫ + 6",
+          "nc": 6,
+          "dnf": "21,05%"
         },
         {
-          "position": "20",
+          "position": "02",
           "driver": "UrsoSenna",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 11.5,
           "pointsLabel": "11,50",
-          "movement": "🔽 - 3",
-          "nc": -3,
-          "dnf": "16,28%"
-        }
-      ],
-      "Serie B": [
+          "movement": "🔽 - 2",
+          "nc": -2,
+          "dnf": "18,18%"
+        },
         {
-          "position": "01",
+          "position": "03",
           "driver": "back",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 10,
           "pointsLabel": "10,00",
-          "movement": "🔽 - 3",
-          "nc": -3,
+          "movement": "🔽 - 2",
+          "nc": -2,
           "dnf": "37,50%"
         },
         {
-          "position": "02",
+          "position": "04",
           "driver": "Srta_Dark_T",
           "country": "BRA",
           "flag": "🇧🇷",
@@ -270,7 +294,7 @@ window.sheetData = {
           "dnf": "66,67%"
         },
         {
-          "position": "03",
+          "position": "05",
           "driver": "BreakingBench",
           "country": "BRA",
           "flag": "🇧🇷",
@@ -282,7 +306,7 @@ window.sheetData = {
           "dnf": "0,00%"
         },
         {
-          "position": "04",
+          "position": "06",
           "driver": "L1peZxZ",
           "country": "BRA",
           "flag": "🇧🇷",
@@ -294,43 +318,43 @@ window.sheetData = {
           "dnf": "66,67%"
         },
         {
-          "position": "05",
+          "position": "07",
           "driver": "Fer",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 8,
           "pointsLabel": "8,00",
-          "movement": "⏫ + 10",
-          "nc": 10,
+          "movement": "🔽 - 2",
+          "nc": -2,
           "dnf": "33,33%"
         },
         {
-          "position": "06",
-          "driver": "Rezende_rz",
+          "position": "08",
+          "driver": "Glauco [BR]",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 6,
           "pointsLabel": "6,00",
-          "movement": "🔽 - 3",
-          "nc": -3,
-          "dnf": "20,51%"
+          "movement": "🔼 + 2",
+          "nc": 2,
+          "dnf": "16,67%"
         },
         {
-          "position": "07",
-          "driver": "Moitipo",
+          "position": "09",
+          "driver": "ValdineyGamer_YT",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 4,
           "pointsLabel": "4,00",
-          "movement": "🔽 - 2",
-          "nc": -2,
-          "dnf": "22,22%"
+          "movement": "⏫ + 16",
+          "nc": 16,
+          "dnf": "7,41%"
         },
         {
-          "position": "08",
+          "position": "10",
           "driver": "Omg_iz-ghOst",
           "country": "BRA",
           "flag": "🇧🇷",
@@ -342,7 +366,7 @@ window.sheetData = {
           "dnf": "44,44%"
         },
         {
-          "position": "09",
+          "position": "11",
           "driver": "TM Poseidon",
           "country": "BRA",
           "flag": "🇧🇷",
@@ -354,40 +378,16 @@ window.sheetData = {
           "dnf": "33,33%"
         },
         {
-          "position": "10",
-          "driver": "Glauco [BR]",
-          "country": "BRA",
-          "flag": "🇧🇷",
-          "team": "Sem construtor",
-          "points": 0,
-          "pointsLabel": "0,00",
-          "movement": "🔽 - 2",
-          "nc": -2,
-          "dnf": "17,07%"
-        },
-        {
-          "position": "11",
-          "driver": "PHMN",
-          "country": "BRA",
-          "flag": "🇧🇷",
-          "team": "Sem construtor",
-          "points": 0,
-          "pointsLabel": "0,00",
-          "movement": "🔽 - 2",
-          "nc": -2,
-          "dnf": "50,00%"
-        },
-        {
           "position": "12",
-          "driver": "junniorkz",
+          "driver": "deri",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
-          "points": 0,
-          "pointsLabel": "0,00",
-          "movement": "🔽 - 2",
-          "nc": -2,
-          "dnf": "33,33%"
+          "points": 1,
+          "pointsLabel": "1,00",
+          "movement": "🔼 + 4",
+          "nc": 4,
+          "dnf": "43,75%"
         },
         {
           "position": "13",
@@ -397,84 +397,110 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "🔽 - 2",
-          "nc": -2,
-          "dnf": "66,67%"
+          "movement": "◀️ = 0",
+          "nc": 0,
+          "dnf": "50,00%"
         },
         {
           "position": "14",
+          "driver": "PHMN",
+          "country": "BRA",
+          "flag": "🇧🇷",
+          "team": "Sem construtor",
+          "points": 0,
+          "pointsLabel": "0,00",
+          "movement": "🔽 - 3",
+          "nc": -3,
+          "dnf": "50,00%"
+        },
+        {
+          "position": "15",
+          "driver": "junniorkz",
+          "country": "BRA",
+          "flag": "🇧🇷",
+          "team": "Sem construtor",
+          "points": 0,
+          "pointsLabel": "0,00",
+          "movement": "🔽 - 3",
+          "nc": -3,
+          "dnf": "33,33%"
+        },
+        {
+          "position": "16",
           "driver": "Major",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "🔽 - 2",
-          "nc": -2,
-          "dnf": "50,00%"
+          "movement": "◀️ = 0",
+          "nc": 0,
+          "dnf": "33,33%"
         },
         {
-          "position": "15",
+          "position": "17",
           "driver": "arleking",
           "country": "MEX",
           "flag": "🇲🇽",
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "🔼 + 4",
-          "nc": 4,
+          "movement": "🔽 - 2",
+          "nc": -2,
           "dnf": "58,33%"
         },
         {
-          "position": "16",
-          "driver": "deri",
-          "country": "BRA",
-          "flag": "🇧🇷",
-          "team": "Sem construtor",
-          "points": 0,
-          "pointsLabel": "0,00",
-          "movement": "🔼 + 4",
-          "nc": 4,
-          "dnf": "46,67%"
-        },
-        {
-          "position": "17",
+          "position": "18",
           "driver": "yasmin",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 8",
-          "nc": 8,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "100,00%"
         },
         {
-          "position": "18",
+          "position": "19",
           "driver": "IsmuYa",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏬ - 5",
-          "nc": -5,
-          "dnf": "57,14%"
+          "movement": "◀️ = 0",
+          "nc": 0,
+          "dnf": "62,50%"
         },
         {
-          "position": "19",
+          "position": "20",
+          "driver": "Tony_Uru",
+          "country": "URU",
+          "flag": "🇺🇾",
+          "team": "Sem construtor",
+          "points": 0,
+          "pointsLabel": "0,00",
+          "movement": "🔼 + 4",
+          "nc": 4,
+          "dnf": "50,00%"
+        }
+      ],
+      "Serie C": [
+        {
+          "position": "01",
           "driver": "Enzo24M",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏬ - 5",
-          "nc": -5,
+          "movement": "🔽 - 2",
+          "nc": -2,
           "dnf": "23,53%"
         },
         {
-          "position": "20",
+          "position": "02",
           "driver": "LucastBorges",
           "country": "BRA",
           "flag": "🇧🇷",
@@ -484,68 +510,42 @@ window.sheetData = {
           "movement": "🔽 - 2",
           "nc": -2,
           "dnf": "50,00%"
-        }
-      ],
-      "Serie C": [
-        {
-          "position": "01",
-          "driver": "Tony_Uru",
-          "country": "URU",
-          "flag": "🇺🇾",
-          "team": "Sem construtor",
-          "points": 0,
-          "pointsLabel": "0,00",
-          "movement": "🔽 - 2",
-          "nc": -2,
-          "dnf": "60,00%"
         },
         {
-          "position": "02",
+          "position": "03",
           "driver": "Sic-wolf",
           "country": "IT",
           "flag": "🇮🇹",
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "🔼 + 2",
-          "nc": 2,
+          "movement": "🔼 + 1",
+          "nc": 1,
           "dnf": "100,00%"
         },
         {
-          "position": "03",
+          "position": "04",
           "driver": "soylauta",
           "country": "ARG",
           "flag": "🇦🇷",
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "🔼 + 2",
-          "nc": 2,
+          "movement": "🔼 + 1",
+          "nc": 1,
           "dnf": "45,45%"
         },
         {
-          "position": "04",
+          "position": "05",
           "driver": "Kauesilvasp",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 5",
-          "nc": 5,
+          "movement": "🔼 + 1",
+          "nc": 1,
           "dnf": "100,00%"
-        },
-        {
-          "position": "05",
-          "driver": "ValdineyGamer_YT",
-          "country": "BRA",
-          "flag": "🇧🇷",
-          "team": "Sem construtor",
-          "points": 0,
-          "pointsLabel": "0,00",
-          "movement": "⏫ + 21",
-          "nc": 21,
-          "dnf": "7,69%"
         },
         {
           "position": "06",
@@ -555,8 +555,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 60",
-          "nc": 60,
+          "movement": "⏫ + 5",
+          "nc": 5,
           "dnf": "50,00%"
         },
         {
@@ -567,8 +567,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 73",
-          "nc": 73,
+          "movement": "⏫ + 5",
+          "nc": 5,
           "dnf": "0,00%"
         },
         {
@@ -579,8 +579,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "🔽 - 4",
-          "nc": -4,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "-"
         },
         {
@@ -591,8 +591,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "🔽 - 4",
-          "nc": -4,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "0,00%"
         },
         {
@@ -603,8 +603,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "🔽 - 4",
-          "nc": -4,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "-"
         },
         {
@@ -615,8 +615,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "🔽 - 4",
-          "nc": -4,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "-"
         },
         {
@@ -627,8 +627,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "🔽 - 4",
-          "nc": -4,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "-"
         },
         {
@@ -639,8 +639,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "🔽 - 4",
-          "nc": -4,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "5,00%"
         },
         {
@@ -651,8 +651,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "🔽 - 4",
-          "nc": -4,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "71,43%"
         },
         {
@@ -663,8 +663,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "🔽 - 4",
-          "nc": -4,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "100,00%"
         },
         {
@@ -675,8 +675,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "🔽 - 4",
-          "nc": -4,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "33,33%"
         },
         {
@@ -687,8 +687,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "🔽 - 4",
-          "nc": -4,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "-"
         },
         {
@@ -699,8 +699,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "🔽 - 4",
-          "nc": -4,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "-"
         },
         {
@@ -711,8 +711,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "🔽 - 4",
-          "nc": -4,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "-"
         },
         {
@@ -723,8 +723,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "🔽 - 4",
-          "nc": -4,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "0,00%"
         }
       ],
@@ -737,8 +737,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 10",
-          "nc": 10,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "22,22%"
         },
         {
@@ -749,8 +749,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "25,00%"
         },
         {
@@ -761,8 +761,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "27,78%"
         },
         {
@@ -773,8 +773,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "0,00%"
         },
         {
@@ -785,8 +785,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "0,00%"
         },
         {
@@ -797,8 +797,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "0,00%"
         },
         {
@@ -809,8 +809,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "20,00%"
         },
         {
@@ -821,8 +821,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "0,00%"
         },
         {
@@ -833,8 +833,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "19,05%"
         },
         {
@@ -845,8 +845,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "0,00%"
         },
         {
@@ -857,8 +857,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "50,00%"
         },
         {
@@ -869,8 +869,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "50,00%"
         },
         {
@@ -881,8 +881,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "0,00%"
         },
         {
@@ -893,8 +893,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "50,00%"
         },
         {
@@ -905,8 +905,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "60,00%"
         },
         {
@@ -917,8 +917,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "0,00%"
         },
         {
@@ -929,8 +929,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "0,00%"
         },
         {
@@ -941,8 +941,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "63,64%"
         },
         {
@@ -953,8 +953,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "33,33%"
         },
         {
@@ -965,8 +965,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "0,00%"
         }
       ],
@@ -979,8 +979,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "50,00%"
         },
         {
@@ -991,8 +991,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "100,00%"
         },
         {
@@ -1003,8 +1003,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "0,00%"
         },
         {
@@ -1015,8 +1015,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "50,00%"
         },
         {
@@ -1027,8 +1027,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "100,00%"
         },
         {
@@ -1039,8 +1039,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "66,67%"
         },
         {
@@ -1051,8 +1051,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "100,00%"
         },
         {
@@ -1063,8 +1063,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "100,00%"
         },
         {
@@ -1075,8 +1075,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "100,00%"
         },
         {
@@ -1087,8 +1087,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "100,00%"
         },
         {
@@ -1099,8 +1099,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "100,00%"
         },
         {
@@ -1111,8 +1111,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "100,00%"
         },
         {
@@ -1123,8 +1123,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "100,00%"
         },
         {
@@ -1135,8 +1135,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "66,67%"
         },
         {
@@ -1147,8 +1147,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "100,00%"
         },
         {
@@ -1159,8 +1159,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "100,00%"
         },
         {
@@ -1171,8 +1171,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "12,50%"
         },
         {
@@ -1183,8 +1183,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "0,00%"
         },
         {
@@ -1195,8 +1195,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 12",
-          "nc": 12,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "100,00%"
         },
         {
@@ -1207,8 +1207,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 51",
-          "nc": 51,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "0,00%"
         }
       ],
@@ -1221,8 +1221,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 51",
-          "nc": 51,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "0,00%"
         },
         {
@@ -1233,8 +1233,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 51",
-          "nc": 51,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "100,00%"
         },
         {
@@ -1245,8 +1245,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 51",
-          "nc": 51,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "0,00%"
         },
         {
@@ -1257,8 +1257,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 51",
-          "nc": 51,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "100,00%"
         },
         {
@@ -1269,8 +1269,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 51",
-          "nc": 51,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "8,33%"
         },
         {
@@ -1281,8 +1281,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 51",
-          "nc": 51,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "50,00%"
         },
         {
@@ -1293,8 +1293,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 51",
-          "nc": 51,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "25,00%"
         },
         {
@@ -1305,8 +1305,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 51",
-          "nc": 51,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "25,00%"
         },
         {
@@ -1317,8 +1317,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 51",
-          "nc": 51,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "-"
         },
         {
@@ -1329,8 +1329,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 51",
-          "nc": 51,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "40,00%"
         },
         {
@@ -1341,8 +1341,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 51",
-          "nc": 51,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "50,00%"
         },
         {
@@ -1353,8 +1353,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 64",
-          "nc": 64,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "50,00%"
         },
         {
@@ -1365,8 +1365,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 64",
-          "nc": 64,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "-"
         },
         {
@@ -1377,8 +1377,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 64",
-          "nc": 64,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "66,67%"
         },
         {
@@ -1389,8 +1389,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 64",
-          "nc": 64,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "100,00%"
         },
         {
@@ -1401,8 +1401,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 64",
-          "nc": 64,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "-"
         },
         {
@@ -1413,8 +1413,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 64",
-          "nc": 64,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "0,00%"
         },
         {
@@ -1425,8 +1425,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 64",
-          "nc": 64,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "0,00%"
         },
         {
@@ -1437,8 +1437,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 64",
-          "nc": 64,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "0,00%"
         },
         {
@@ -1449,8 +1449,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 64",
-          "nc": 64,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "0,00%"
         }
       ],
@@ -1463,8 +1463,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 64",
-          "nc": 64,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "0,00%"
         },
         {
@@ -1475,8 +1475,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 64",
-          "nc": 64,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "0,00%"
         },
         {
@@ -1487,8 +1487,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 64",
-          "nc": 64,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "100,00%"
         },
         {
@@ -1499,8 +1499,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 64",
-          "nc": 64,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "100,00%"
         },
         {
@@ -1511,8 +1511,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 64",
-          "nc": 64,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "100,00%"
         },
         {
@@ -1523,8 +1523,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 64",
-          "nc": 64,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "100,00%"
         },
         {
@@ -1535,8 +1535,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 64",
-          "nc": 64,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "100,00%"
         },
         {
@@ -1547,8 +1547,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 64",
-          "nc": 64,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "100,00%"
         },
         {
@@ -1559,8 +1559,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 64",
-          "nc": 64,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "-"
         },
         {
@@ -1571,8 +1571,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 64",
-          "nc": 64,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "-"
         },
         {
@@ -1583,8 +1583,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 64",
-          "nc": 64,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "-"
         },
         {
@@ -1595,8 +1595,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 64",
-          "nc": 64,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "-"
         },
         {
@@ -1607,8 +1607,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 64",
-          "nc": 64,
+          "movement": "◀️ = 0",
+          "nc": 0,
           "dnf": "-"
         }
       ]
