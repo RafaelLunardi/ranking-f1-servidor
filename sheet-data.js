@@ -1,5 +1,5 @@
 window.sheetData = {
-  "updatedAt": "2026-06-22T08:52:31.011Z",
+  "updatedAt": "2026-06-23T06:42:35.948Z",
   "f2": {
     "rankings": {
       "Serie A": [
