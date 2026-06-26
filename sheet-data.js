@@ -1,5 +1,5 @@
 window.sheetData = {
-  "updatedAt": "2026-06-25T06:42:22.500Z",
+  "updatedAt": "2026-06-26T06:47:26.143Z",
   "f2": {
     "rankings": {
       "Serie A": [
@@ -633,15 +633,15 @@ window.sheetData = {
         },
         {
           "position": "13",
-          "driver": "KINGxisde",
-          "country": "BRA",
-          "flag": "🇧🇷",
+          "driver": "QuantumStern",
+          "country": "MEX",
+          "flag": "🇲🇽",
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "🔽 - 1",
-          "nc": -1,
-          "dnf": "100,00%"
+          "movement": "#N/A",
+          "nc": 0,
+          "dnf": "-"
         },
         {
           "position": "14",
@@ -651,8 +651,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 67",
-          "nc": 67,
+          "movement": "⏫ + 60",
+          "nc": 60,
           "dnf": "75,00%"
         },
         {
