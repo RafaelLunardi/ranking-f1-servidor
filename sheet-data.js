@@ -1,5 +1,5 @@
 window.sheetData = {
-  "updatedAt": "2026-07-10T06:36:40.725Z",
+  "updatedAt": "2026-07-11T05:33:30.076Z",
   "f2": {
     "rankings": {
       "Serie A": [
@@ -1608,6 +1608,42 @@ window.sheetData = {
           "points": 0,
           "pointsLabel": "0,00",
           "movement": "◀️ = 0",
+          "nc": 0,
+          "dnf": "-"
+        },
+        {
+          "position": "14",
+          "driver": "bkkkpedro",
+          "country": "BRA",
+          "flag": "🇧🇷",
+          "team": "Sem construtor",
+          "points": 0,
+          "pointsLabel": "0,00",
+          "movement": "#N/A",
+          "nc": 0,
+          "dnf": "-"
+        },
+        {
+          "position": "15",
+          "driver": "Isaac Soto",
+          "country": "MEX",
+          "flag": "🇲🇽",
+          "team": "Sem construtor",
+          "points": 0,
+          "pointsLabel": "0,00",
+          "movement": "#N/A",
+          "nc": 0,
+          "dnf": "-"
+        },
+        {
+          "position": "16",
+          "driver": "SBGF1_beco_nv",
+          "country": "BRA",
+          "flag": "🇧🇷",
+          "team": "Sem construtor",
+          "points": 0,
+          "pointsLabel": "0,00",
+          "movement": "#N/A",
           "nc": 0,
           "dnf": "-"
         }
