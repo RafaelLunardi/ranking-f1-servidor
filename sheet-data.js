@@ -1,5 +1,5 @@
 window.sheetData = {
-  "updatedAt": "2026-07-13T06:07:04.705Z",
+  "updatedAt": "2026-07-14T05:22:30.491Z",
   "f2": {
     "rankings": {
       "Serie A": [
@@ -767,13 +767,13 @@ window.sheetData = {
         },
         {
           "position": "04",
-          "driver": "bruno",
+          "driver": "Nego_ino",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "◀️ = 0",
+          "movement": "#N/A",
           "nc": 0,
           "dnf": "-"
         },
@@ -875,15 +875,15 @@ window.sheetData = {
         },
         {
           "position": "13",
-          "driver": "luimatheo",
+          "driver": "Not good",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "◀️ = 0",
+          "movement": "#N/A",
           "nc": 0,
-          "dnf": "20,00%"
+          "dnf": "-"
         },
         {
           "position": "14",
@@ -911,15 +911,15 @@ window.sheetData = {
         },
         {
           "position": "16",
-          "driver": "BARLAS",
-          "country": "CAN",
-          "flag": "🇨🇦",
+          "driver": "mateusngv",
+          "country": "BRA",
+          "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "◀️ = 0",
+          "movement": "#N/A",
           "nc": 0,
-          "dnf": "0,00%"
+          "dnf": "-"
         },
         {
           "position": "17",
@@ -973,15 +973,15 @@ window.sheetData = {
       "Serie E": [
         {
           "position": "01",
-          "driver": "jhursinho",
+          "driver": "gootic",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "◀️ = 0",
+          "movement": "#N/A",
           "nc": 0,
-          "dnf": "0,00%"
+          "dnf": "-"
         },
         {
           "position": "02",
