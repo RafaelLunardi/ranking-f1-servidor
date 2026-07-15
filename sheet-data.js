@@ -1,5 +1,5 @@
 window.sheetData = {
-  "updatedAt": "2026-07-14T05:22:30.491Z",
+  "updatedAt": "2026-07-15T05:23:56.024Z",
   "f2": {
     "rankings": {
       "Serie A": [
@@ -1009,15 +1009,15 @@ window.sheetData = {
         },
         {
           "position": "04",
-          "driver": "Asce",
+          "driver": "LeozeraBF",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "◀️ = 0",
+          "movement": "#N/A",
           "nc": 0,
-          "dnf": "33,33%"
+          "dnf": "-"
         },
         {
           "position": "05",
@@ -1045,15 +1045,15 @@ window.sheetData = {
         },
         {
           "position": "07",
-          "driver": "GuestElkNoise",
+          "driver": "Deadporco",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "◀️ = 0",
+          "movement": "#N/A",
           "nc": 0,
-          "dnf": "100,00%"
+          "dnf": "-"
         },
         {
           "position": "08",
@@ -1129,15 +1129,15 @@ window.sheetData = {
         },
         {
           "position": "14",
-          "driver": "caetano",
+          "driver": "Chimim00",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "◀️ = 0",
+          "movement": "#N/A",
           "nc": 0,
-          "dnf": "100,00%"
+          "dnf": "-"
         },
         {
           "position": "15",
@@ -1201,29 +1201,29 @@ window.sheetData = {
         },
         {
           "position": "20",
-          "driver": "KS7SonDiogo",
+          "driver": "BrunoCoutinhoC",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "◀️ = 0",
+          "movement": "#N/A",
           "nc": 0,
-          "dnf": "100,00%"
+          "dnf": "-"
         }
       ],
       "Serie F": [
         {
           "position": "01",
-          "driver": "tteuwx",
+          "driver": "Tbrenelli",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "◀️ = 0",
+          "movement": "#N/A",
           "nc": 0,
-          "dnf": "12,50%"
+          "dnf": "-"
         },
         {
           "position": "02",
@@ -1263,15 +1263,15 @@ window.sheetData = {
         },
         {
           "position": "05",
-          "driver": "Alexis Barragan",
-          "country": "MEX",
-          "flag": "🇲🇽",
+          "driver": "Gordão Do CS",
+          "country": "BRA",
+          "flag": "🇧🇷",
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "◀️ = 0",
+          "movement": "#N/A",
           "nc": 0,
-          "dnf": "100,00%"
+          "dnf": "-"
         },
         {
           "position": "06",
@@ -1638,6 +1638,18 @@ window.sheetData = {
         {
           "position": "16",
           "driver": "SBGF1_beco_nv",
+          "country": "BRA",
+          "flag": "🇧🇷",
+          "team": "Sem construtor",
+          "points": 0,
+          "pointsLabel": "0,00",
+          "movement": "#N/A",
+          "nc": 0,
+          "dnf": "-"
+        },
+        {
+          "position": "17",
+          "driver": "Ysleek",
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
