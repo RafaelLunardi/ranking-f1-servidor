@@ -1,5 +1,5 @@
 window.sheetData = {
-  "updatedAt": "2026-08-04T05:40:48.769Z",
+  "updatedAt": "2026-08-05T05:38:40.351Z",
   "f2": {
     "rankings": {
       "Serie A": [
@@ -335,8 +335,8 @@ window.sheetData = {
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
-          "points": 18,
-          "pointsLabel": "18,00",
+          "points": 36,
+          "pointsLabel": "36,00",
           "movement": "🔽 - 1",
           "nc": -1,
           "dnf": "14,29%"
