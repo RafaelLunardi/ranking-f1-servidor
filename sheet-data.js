@@ -1,5 +1,5 @@
 window.sheetData = {
-  "updatedAt": "2026-08-05T05:38:40.351Z",
+  "updatedAt": "2026-08-06T05:40:44.341Z",
   "f2": {
     "rankings": {
       "Serie A": [
@@ -577,10 +577,10 @@ window.sheetData = {
           "country": "BRA",
           "flag": "🇧🇷",
           "team": "Sem construtor",
-          "points": 0,
-          "pointsLabel": "0,00",
-          "movement": "🔽 - 2",
-          "nc": -2,
+          "points": 8,
+          "pointsLabel": "8,00",
+          "movement": "⏬ - 5",
+          "nc": -5,
           "dnf": "0,00%"
         },
         {
@@ -591,8 +591,8 @@ window.sheetData = {
           "team": "Sem construtor",
           "points": 0,
           "pointsLabel": "0,00",
-          "movement": "⏫ + 9",
-          "nc": 9,
+          "movement": "⏫ + 5",
+          "nc": 5,
           "dnf": "0,00%"
         },
         {
@@ -1553,6 +1553,30 @@ window.sheetData = {
         },
         {
           "position": "09",
+          "driver": "Pingo Gorducho",
+          "country": "BRA",
+          "flag": "🇧🇷",
+          "team": "Sem construtor",
+          "points": 0,
+          "pointsLabel": "0,00",
+          "movement": "#N/A",
+          "nc": 0,
+          "dnf": "25,00%"
+        },
+        {
+          "position": "10",
+          "driver": "e25ww1",
+          "country": "BRA",
+          "flag": "🇧🇷",
+          "team": "Sem construtor",
+          "points": 0,
+          "pointsLabel": "0,00",
+          "movement": "#N/A",
+          "nc": 0,
+          "dnf": "-"
+        },
+        {
+          "position": "11",
           "driver": "VSC - Gebe",
           "country": "BRA",
           "flag": "🇧🇷",
@@ -1564,7 +1588,7 @@ window.sheetData = {
           "dnf": "0,00%"
         },
         {
-          "position": "10",
+          "position": "12",
           "driver": "LK GUIZERA",
           "country": "BRA",
           "flag": "🇧🇷",
@@ -1576,7 +1600,7 @@ window.sheetData = {
           "dnf": "0,00%"
         },
         {
-          "position": "11",
+          "position": "13",
           "driver": "AmaralJira",
           "country": "GHA",
           "flag": "🇬🇭",
@@ -1588,7 +1612,7 @@ window.sheetData = {
           "dnf": "0,00%"
         },
         {
-          "position": "12",
+          "position": "14",
           "driver": "Niczera",
           "country": "BRA",
           "flag": "🇧🇷",
@@ -1600,7 +1624,7 @@ window.sheetData = {
           "dnf": "-"
         },
         {
-          "position": "13",
+          "position": "15",
           "driver": "CLV Jullian Vinicius",
           "country": "BRA",
           "flag": "🇧🇷",
@@ -1612,7 +1636,7 @@ window.sheetData = {
           "dnf": "-"
         },
         {
-          "position": "14",
+          "position": "16",
           "driver": "SGC-RICHIE",
           "country": "MEX",
           "flag": "🇲🇽",
@@ -1624,7 +1648,7 @@ window.sheetData = {
           "dnf": "-"
         },
         {
-          "position": "15",
+          "position": "17",
           "driver": "Isaac Soto",
           "country": "MEX",
           "flag": "🇲🇽",
